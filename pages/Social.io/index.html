@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Browser Tab Title -->
+    <title>Social.IO</title>
+<!-- Fav Icon -->
+    <link rel="icon" type="image/x-icon" href="#">
+<!-- CSS -->
+    <link rel="stylesheet" href="/pages/Social.io/css/style.css">
+<!-- JavaScript -->
+    <script src="/pages/Social.io/js/script.js" defer></script>
+</head>
+<body>
+<!-- Navigation (Links - Account) -->
+    <nav>
+
+        <a href="../../index.html" class="nav-icon-container"><img src="/pages/Social.io/media/icons/navigation-icons/powerButton.png" class="nav-icon"><h2>SOCIAL.IO</h2></a>
+        <a href="/pages/Social.io/index.html">Trending</a>
+
+        <div class="nav-branch">
+
+            <button class="nav-btn" id="navExploreBtn">Explore</button>
+
+            <div class="nav-sub-container" id="exploreContainer">
+                <i class="close-btn" ><img id="closeBtn1" src="/pages/Social.io/media/icons/navigation-icons/xBtnDark.png"></i>
+                <a href="/pages/Social.io/index.html">Explore All</a>
+
+                <div class="sub-left-column">
+
+                    <p>By Category</p>
+                    <a href="#">Category Link</a>
+                    <a href="#">Category Link</a>
+                    <a href="#">Category Link</a>
+                    <a href="#">Category Link</a>
+                    <a href="#">Category Link</a>
+                    <a href="#">Category Link</a>
+
+                </div>
+
+                <div class="sub-right-column">
+
+                    <p>By Date</p>
+                    <a href="#">Category Link</a>
+                    <a href="#">Category Link</a>
+                    <a href="#">Category Link</a>
+                    <a href="#">Category Link</a>
+
+                </div>
+                
+                <img src="/pages/Social.io/media/images/people/standOurIllustr.jpg" class="sub-bkg-img">
+            </div>
+            
+        </div>
+        <div class="nav-branch">
+
+            <button class="nav-btn" id="navDashboardBtn">My Social.IO</button>
+            <div class="nav-sub-container" id="dashboardContainer">
+                <i class="close-btn" ><img id="closeBtn2" src="/pages/Social.io/media/icons/navigation-icons/xBtnDark.png"></i>
+                <div class="sub-left-column">
+
+                    <p>For You</p>
+                    <a href="#">Followers</a>
+                    <a href="#">Following</a>
+                    <a href="#">Music</a>
+                    <a href="#">Podcast</a>
+                    <a href="#">Sports / Lifestyle</a>
+                    <a href="#">Streaming / Video Games</a>
+
+                </div>
+
+                <div class="sub-right-column">
+
+                    <p>Recommended</p>
+                    <a href="#">Music</a>
+                    <a href="#">Podcast</a>
+                    <a href="#">Sports / Lifestyle</a>
+                    <a href="#">Streaming / Video Games</a>
+
+                </div>
+
+                <img src="/pages/Social.io/media/images/people/standOurIllustr.jpg" class="sub-bkg-img">
+
+            </div>
+
+        </div>
+
+<!-- Account - Login / Sign Up -->
+        <div class="account-wrapper">
+            <button id="accountBtn">Account</button>
+<!-- Introduction to Website -->
+            <div class="intro-social-wrapper" id="introSocialWrapper">
+                <div>
+                <h1 class="intro-header">Welcome to Social.IO, a place to connect with friends, family and collegues</h1>
+                <h2 class="intro-header-continued">Explore, share and be apart of a growing community world-wide</h2>
+                </div>
+<!-- Login -->
+            <div class="login-wrapper">
+
+                <h2>Login</h2>
+                <form>
+                    <!--?? Potential QR for Mobile App -->
+                    <input type="text" placeholder="USER ID / EMAIL" id="loginUserInput">
+                    <br>
+                    <input type="password" placeholder="******" id="loginPasswordInput">
+                    <br>
+                    <button id="loginBtn">Log In</button>
+                    <button id="forgotuser">Forgot User ID / Password</button>
+                </form>
+            </div>
+            
+            </div>
+<!-- Sign Up -->
+            <div class="signup-wrapper">
+
+                <form id="signupPgOne">
+                    <h2>Create Account</h2>
+                    <p>Enter Details Below</p>
+                    <label for="userIdCreate">
+                    
+                </form>
+
+                <form id="signupPgTwo">
+
+                </form>
+
+                <form id="signupPgThree">
+
+                </form>
+
+                <form id="signupPgFour">
+
+                </form>
+
+            </div>
+<!-- My Account Dashboard -->
+            <div class="my-acct-wrapper">
+            <!-- Account Button -->
+                <button id="myAcctBtn"><img src="#" id="myAcctAvatar"></button>
+                <!-- Account Status -->
+                <div class="my-acct-dash-section" id="myAcctStatus">
+
+                    <button class="status-btn" id="statusBtn">Set Status</button>
+
+                    <div id="statusArea">
+                        <input type="text" placeholder="What's Happening?">
+                        <br>
+                        <select id="statusOptionBox">
+                            <option value="default" disabled selected>Status</option>
+                            <option value="away">Away</option>
+                            <option value="hidden">Hidden</option>
+                            <option value="online">Online</option>
+                        </select>
+                        <br>
+                        <select id="statusTimeout">
+                            <option value="default" disabled selected>Clear Status</option>
+                            <option value="5">5 Mins</option>
+                            <option value="15">15 Mins</option>
+                            <option value="30">30 Mins</option>
+                            <option value="60">1 HR</option>
+                            <option value="3hrs">3 HRS</option>
+                            <option value="24hrs">24 HRS</option>
+                            <option value="never">Never</option>
+                    </div>
+                </div>
+                <!-- Account Dashboard - Main -->
+                <div class="my-acct-dashboard" id="MyAcctDash">
+                    <!-- Dashboard Section -->
+                    <div class="my-acct-dash-section">
+                        <p>Profile</p>
+                        <a href="myProfile.html">My Profile<i class="dash-icons"><img src="#" class="dash-icon-img"></i></a>
+                        <a href="myProfile.htmll#followerContainer">Followers<i class="dash-icons"><img src="#" class="dash-icon-img"></i></a>
+                        <a href="myProfile.html#followingContainer">Following<i class="dash-icons"><img src="#" class="dash-icon-img"></i></a>
+                        <a href="myProfile.html#settingsContainer">Settings<i class="dash-icons"><img src="#" class="dash-icon-img"></i>
+                    </div>
+                    <!-- Dashboard Section -->
+                    <div class="my-acct-dash-section">
+                        <p>Security & Data</p>
+                        <a href="security.html#privacyContainer">Privacy Settings</a>
+                        <a href="security.html#loginSettingsContainer">Login Settings</a>
+                        <a href="security.html#historyContainer">History</a>
+                    </div>
+                    <!-- Dashboard Section -->
+                    <div class="my-acct-dash-section">
+                        <p>Themes</p>
+                        <a href="myProfile.html#customizationContainer">Customize</a>
+                    </div>
+                    <!-- Dashboard Section -->
+                    <div class="my-acct-dash-section">
+                        <p>Other Accounts</p>
+                        <a href="accounts.html#linkedAcctsContainer">Linked Accounts</a>
+                        <a href="accounts.html#creatorAcctsContainer">Creator Account</a>
+                    </div>
+                    <!-- Dashboard Section -->
+                    <div class="my-acct-dash-section">
+                        <p>Support</p>
+                        <a href="contact.html">Contact Us<i class="dash-icons"><img src="#" class="dash-icon-img"></i></a>
+                        <a href="termsAndConditions.html">Terms & Conditions<i class="dash-icons"><img src="#" class="dash-icon-img"></i></a></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+    </nav>
+<!-- Homepage - Main  -->
+    <main>
+
+        <section>
+
+        </section>
+
+        <section>
+
+        </section>
+
+        <section>
+
+        </section>
+
+        <section>
+
+        </section>
+
+        <section>
+
+        </section>
+
+        <section>
+
+        </section>
+
+        <section>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

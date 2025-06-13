@@ -1,0 +1,57 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bkg_gray: #2d2f33;
+    --clr_candyRed: #e52400;
+    --clr_gold: #e1a100;
+    --clr_lightGold: #ffc42f;
+    --clr_darkGold: #d99214;
+    --clr_bluey: #5449e9;
+    --clr_gray: #2d2f33;
+
+}
+/* @font-face {
+    font-family: 'Thunder';
+    src: url(/ASSETS/Fonts/a_love_of_thunder/A\ Love\ of\ Thunder.ttf);
+} */
+/* @font-face {
+    font-family: 'Create';
+    src: url(/ASSETS/Fonts/creato_display/CreatoDisplay-Medium.otf);
+} */
+@font-face {
+    font-family: 'Create';
+    src: url(/pages/Frenchmen-Art-Bazaar/ASSETS/Font/bazinga/Bazinga-RegularItalic.otf);
+}
+@font-face {
+    font-family: 'Word';
+    src: url(/pages/Frenchmen-Art-Bazaar/ASSETS/Font/ag_stencil/AG-Stencil.ttf);
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to bottom, var(--bkg_bloodRed), white); */
+    font-family: 'Create', sans-serif;
+    /* font-family: 'Word', sans-serif; */
+    color: black;
+    font-size: 16px;
+    letter-spacing: .5rem;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+     <link rel="stylesheet" href="/pages/Antoine_Mowatt/CSS/default.css">
+     <link rel="stylesheet" href="/pages/Antoine_Mowatt/CSS/style.css">
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <!-- FavIcon -->
+     <link rel="icon" type="image/x-icon" href="/MEDIA/">
+    <!-- JavaScript -->
+     <script src="/pages/Antoine_Mowatt/JS/script.js" defer></script>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <title>Antoine Mowatt - Portfolio</title>
+</head>
+<body>
+    <header>
+        <ul class="navbar" aria-expanded="false">
+            <li class="nav-item">
+                <a href="../../index.html">CJAXDEV PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+                <button class="navBtn" id="portBtn">PORTFOLIO</button>
+                <div class="sub-nav" id="subNavOne">
+                    <a href="/pages/Antoine_Mowatt/index.html">SKETCHES</a>
+                    <a href="/pages/Antoine_Mowatt/index.html">PROJECTS</a>
+                    <a href="/pages/Antoine_Mowatt/index.html">UNDER CONSTRUCTION</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">FOLLOW ME</a>
+            </li>
+            
+        </ul>
+    </header>
+    <div class="responsive-container">
+        <div class="rCont hide introduction">
+            <h1>Antoine Mowatt</h1>
+            <div class="desc">
+              <h2>Visual Artist</h2>
+                <h2>Abstract Surrealist</h2>
+                <h2>Tribalism - Art Deco</h2>  
+            </div>
+            
+            
+            <div class="rCont hide about-me ">
+                <h3>About Me</h3>
+                <p>
+                    Jamaican Decent, Peachtree City - ATL Georgia born & raise
+                    Local New Orleans Artist.
+                </p>
+                <p>Freelance Illustrator. Commissioned Artist. fractal based imagery dealing with universal patterns and sacred geometry created with multi media illustrations.</p>
+            </div>
+
+            <div class="rCont hide img">
+                <img src="/pages/Antoine Mowatt/MEDIA/IMAGES/toine-main.jpg" alt="Antoine Profile">
+            </div>
+
+        </div>
+
+        <div class="rCont hide featured">
+            <h2>
+                Capturing the Artist
+            </h2>
+            <div class="carousel-wrapper">
+                <button id="left"><span class="img"><img src="/MEDIA/IMAGES/icons/left-arrow-white.svg" alt=""></span></button>
+                <ul class="carousel">
+                    <li><div class="img"><img src="/pages/Antoine_Mowatt/MEDIA/IMAGES/toine-3.png" alt=""></div></li>
+                    <li><div class="img"><img src="/pages/Antoine_Mowatt/MEDIA/IMAGES/toine-4.jpg" alt=""></div></li>
+                    <li><div class="img"><img src="/pages/Antoine _owatt/MEDIA/IMAGES/toine-6.jpg" alt=""></div></li>
+                </ul>  
+                <button id="right"><span class="img"><img src="/pages/Antoine_Mowatt/MEDIA/IMAGES/icons/right-arrow-white.svg" alt=""></span></button>
+            </div>
+            
+        </div>
+
+        <div class="rCont locations">
+            <h2>Join Local Artist</h2>
+            <div id="map"></div>
+            <form>
+                <h3>RSVP - We're expecting you!</h3>
+                <input type="text" placeholder="First Name">
+                <br>
+                <input type="text" placeholder="Last Name">
+                <br>
+                <input type="date" placeholder="Date of Birth">
+                <br>
+                <input type="email" placeholder="Email Address">
+                <br>
+                <input type="email" placeholder="Confirm Email Address" required>
+                <br>
+                <div>
+                   <input type="checkbox" id="termsCheckbox">
+                    <label for="termsCheckbox">I Agree to <a href="#">Terms & Conditions</a></label> 
+                </div>
+                <button>Finish</button>
+            </form>
+            <div class="img">
+                <div class="overlay"></div>
+                <img src="/pages/Antoine_Mowatt/MEDIA/IMAGES/market_one.png" alt="Art Market">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

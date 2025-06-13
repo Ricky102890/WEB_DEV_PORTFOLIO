@@ -1,0 +1,752 @@
+/* Universal */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Root */
+:root {
+    --main-clr:rgba(255, 188, 255, 1);
+    --sec-clr: rgba(188, 255, 255, 1);
+    --trio-clr: rgba(188, 255, 188, 1);
+    --quad-clr: rgb(30, 33, 47);
+    --font-shadow-dark: rgba(0, 0, 0, 1);
+    --font-shadow-light: rgba(255, 255, 255, 1);
+    --box-shadow-dark: rgba(0, 0, 0, 1);
+    --box-shadow-light: rgba(255, 255, 255, 1);
+    --font-face: 'Comic Neue', cursive;
+}
+
+
+/* Downloaded Fonts */
+@font-face {
+font-family: "LittleChina";
+src: url("/pages/CityPop/assets/CitypopMainDEMO-Regular.ttf");
+}
+@font-face {
+font-family: "CyberPunk";
+src: url("/pages/CityPop/assets/Cybrpnuk2.ttf");
+}
+
+
+/* HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Body */
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url("/pages/CityPop/img/parkJapanVaporwave.jpg");
+    background-size: cover;
+    position: relative;
+    font-size: 1em;
+}
+
+
+/* Navigation */
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    margin-bottom: 4em;
+    padding: 4em;
+}
+header nav {
+    display: flex;
+    width: 75%;
+    background: transparent;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-links {
+    text-decoration: none;
+    display: inline-block;
+    padding: .5em 1em;
+    color: var(--box-shadow-light);
+    font-weight: 200;
+    text-shadow: 2px 2px 4px var(--font-shadow-dark);
+    position: relative;
+    font-size: 1.5em;
+    transition: all 700ms ease-in-out;
+    font-family: "CyberPunk", sans-serif;
+}
+.nav-links::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 170, 220));
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    z-index: 99;
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+}
+.nav-links:hover {
+    transform: translateX(16px);
+}
+
+.nav-links:hover::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 170, 220));
+    box-shadow: 2px 0 4px var(--box-shadow-light);
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    z-index: 99;
+    opacity: 1;
+}
+.header-logo {
+    width: 200px;
+    height: auto;
+    margin-left: 10%;
+    cursor: pointer;
+    transition: all 700ms ease-in-out;
+    margin-top: 4em;
+}
+.header-logo:hover {
+    transform: scale(110%);
+    transform: translateX(40px);
+}
+header button {
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: .35em .5em;
+    margin-right: 10%;
+    margin-left: 20px;
+    color: var(--font-shadow-light);
+    cursor: pointer;
+    transition: 700ms all ease;
+    font-family: "CyberPunk", sans-serif;
+}
+header button:hover {
+    transform: scale(105%);
+    background-color: var(--quad-clr);
+}
+
+
+/* Account Login  */
+.join-container {
+    width: 25%;
+    font-family: "CyberPunk", sans-serif;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    z-index: 99;
+    padding: 2em;
+    font-weight: 200;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.show-login {
+    display: flex;
+}
+
+.join-user {
+    width: 100%;
+}
+
+.join-user input {
+    margin-bottom: .5em;
+}
+
+.remember {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.remember input {
+    width: 10px;
+}
+
+.register {
+    text-align: center;
+}
+
+.join-container button {
+    margin: 1em auto;
+    padding: .5em .75em;
+    font-size: .5em;
+    font-family: "CyberPunk", sans-serif;
+    background: rgb(255, 255, 255);
+    border: solid 1px rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.join-user input, .join-pass input{
+    margin: .75em auto;
+}
+
+.join-pass {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+label {
+    font-family: "CyberPunk", sans-serif;
+}
+
+label, input {
+    text-align: left;
+    padding-left: .25em;
+    font-size: 1em;
+}
+
+input {
+    border-radius: 4px;
+}
+
+.forgot {
+    margin-bottom: 1em;
+    font-family: "CyberPunk", sans-serif;
+}
+
+.forgot-link {
+    color: rgb(255, 255, 255);
+    font-size: .5em;
+    font-family: "CyberPunk", sans-serif;
+}
+
+
+/* Register Section */
+.register-container {
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    z-index: 100;
+    padding: 2em;
+    font-family: "CyberPunk", sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.register-container div {
+    margin-bottom: .75em;
+}
+
+.register-container input {
+    margin: .5em;
+}
+
+.return-btn, .register-btn {
+    margin: 1em auto;
+    padding: .5em .75em;
+    font-size: .5em;
+    font-family: "CyberPunk", sans-serif;
+    background: rgb(255, 255, 255);
+    border: solid 1px rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.return span {
+    margin: 1em;
+}
+
+#register-button {
+    text-decoration: underline;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: "CyberPunk", sans-serif;
+}
+
+#return-btn {
+    margin: 1em auto;
+    padding: .5em .75em;
+    font-size: .5em;
+    font-family: "CyberPunk", sans-serif;
+    background: rgb(255, 255, 255);
+    border: solid 1px rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.show-register {
+    display: flex;
+}
+
+.return {
+    text-align: center;
+}
+
+
+/* Main */
+.homepage-body {
+    width: 75%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 75%);
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 2em;
+    gap: 1em;
+    margin: 1em auto;
+}
+.homepage-body > div  {
+    background: rgba(0, 0, 0, .7);
+    border-radius: 4px;
+    padding: 1rem;
+    font-weight: 500;
+    width: fit-content;
+}
+.homepage-body > p  {
+    font-weight: 200;
+}
+.homepage-body div p {
+    width: 800px;
+}
+.homepage-body h1  {
+    font-family: 'CyberPunk', sans-serif;
+}
+
+.intro-citypop {
+    background-color: var(--main-clr);
+    width: 80%;
+    padding: 2em;
+    border-radius: 10px;
+    grid-column: span 3;
+    color: white;
+}
+
+
+/* Links in Sections */
+.intro-citypop a {
+    text-decoration: underline;
+    color: var(--trio-clr);
+}
+
+.citypop-section {
+    width: 80%;
+    min-width: 400px;
+    padding: 2em;
+    color: aliceblue;
+}
+.citypop-section h1 {
+    text-shadow: 2px 2px 6px wheat;
+}
+
+.intro-citypop h2, .intro-citypop h1 {
+    margin-bottom: .75em;
+    text-shadow: 2px 2px 4px var(--font-shadow-dark);
+    color: aliceblue;
+}
+
+.intro-paragraphI {
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 4px;
+    padding: .5em;
+    text-indent: 1em;
+    line-height: 1.5em;
+}
+
+.intro-paragraph {
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 4px;
+    padding: .5em;
+    text-indent: 1em;
+    line-height: 1.5em;
+}
+
+.intro-paragraph:nth-child(3), .intro-paragraph:nth-child(4), .intro-paragraph:nth-child(5) {
+        background: rgba(255,255, 255, .6);
+}
+
+.highlight-heading {
+    color: var(--trio-clr);
+    text-shadow: 2px 2px 4px var(--font-shadow-dark);
+}
+
+
+/* Digital Container For Images */
+.digital-container {
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em auto;
+    column-gap: 3em;
+}
+
+
+/* Featured Images */
+.feat-imgs {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.feat-imgs:hover {
+    transform: scale(110%);
+}
+
+.feat-imgs:target {
+    transform: scale(110%);
+}
+
+
+/* Footer - Social Links and Legal Links */
+/* Footer Container */
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Nav for Social Media Link Images */
+.social-link-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* Social Media Image Links */
+.social-links {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-imgs {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* Terms & Conditions - About Us - Copyright */
+/* Legals Container */
+.legal-container {
+    width: 50%;
+    height: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* Legals Links */
+.legal-links {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: .75em;
+    font-family: "CyberPunk", sans-serif;
+}
+
+
+/* Scroll State */
+/* Hidden State */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 700ms ease;
+    transform: translateX(-100%);
+}
+
+/* Visible State */
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* Reduced Motion ARIA */
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+
+/* Image Container */
+#imgBox {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+
+/* Image Overlay */
+#img-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, .3);
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
+    z-index: 4;
+    transform: translateX(-50%);
+    transition: all 700ms ease;
+}
+
+/* Hover Effects */
+#imgBox:hover #img-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, .3);
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
+    z-index: 4;
+    transform: translateX(0);
+}
+
+/* Image Size */
+.section-img {
+    width: 400px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Account Area */
+.accountCont {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .5em;
+    margin-top: 3em;
+    background: var(--main-clr);
+    border-radius: 10px;
+}
+.accountCont h2 {
+    color: white;
+    font-family: "CyberPunk", sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+.accountCont p {
+    font-family: "CyberPunk", sans-serif;
+    font-size: .75em;
+    margin-bottom: 1em;
+}
+.accountCont a {
+    text-decoration: none;
+    font-family: "CyberPunk", sans-serif;
+    color: white;
+}
+.accountInfoCont {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+}
+.accountInfo {
+    display: block;
+    width: fit-content;
+    height: auto;
+    padding: 1em;
+}
+
+/* Account Page Static */
+#account-page {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-60%);
+    display: flex;
+    flex-direction: row;
+    width: fit-content6f;
+    min-width: 800px;
+    height: auto;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, .7);
+    border-radius: 10px;
+    align-items: flex-start;
+    padding: 4em;
+    margin: 4em auto;
+    font-family: "CyberPunk", sans-serif;
+}
+
+#usernameHeading {
+    color: black;
+    text-shadow: 1px 1px 2px gray;
+    text-decoration: underline;
+}
+#get-started  {
+    margin-bottom: 2em;
+}
+#account-data {
+    margin-left: 6em;
+}
+#account-data h3, #account-data h4, #account-data p, #account-data div {
+    margin-bottom: 1.125em;
+    }
+#account-data p:nth-child(4) {
+    font-size: 1.25em;
+    color: rgb(96, 96, 96);
+}
+#contact-data {
+
+}
+#contact-data input {
+    margin: 1em auto;
+}
+#moreInfo-data {
+    
+}
+
+#fullName, #email, #dateofbirth {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-family: "CyberPunk", sans-serif;
+    color: black;
+}
+#hidden-sex-options {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#sex-label {
+    font-size: .75em;
+}
+#curr-sex {
+    font-size: .5em;
+}
+#sex-update-btn {
+    background: black;
+    padding: .25em .5em;
+    color: white;
+    font-family: "CyberPunk", sans-serif;
+}
+#sex-update-submit {
+    background: black;
+    padding: .25em .5em;
+    color: white;
+    font-family: "CyberPunk", sans-serif;
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+
+    }
+    footer {
+        height: 200px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .social-link-container {
+        width: 25%;
+        padding: .5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+    .social-links {
+        display: inline-block;
+        text-decoration: none;
+        margin: .5rem;
+    }
+    
+    .social-imgs {
+        width: 16px;
+        height: 16px;
+    }
+    .legal-container {
+        width: 75%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+
+    .legal-links {
+        width: 75%;
+        font-size: .5rem;
+        font-weight: 400;
+        letter-spacing: .3rem;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+    }
+}

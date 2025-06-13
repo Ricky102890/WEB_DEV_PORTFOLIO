@@ -1,0 +1,570 @@
+:root {
+    --bkg_darkestGreen: #0d1c17;
+    --clr_seafoamGreen: #448e73;
+    --clr_lightSeafoamGreen: #b5d9cc;
+    --clr_brown: #7b4719;
+    --clr_clay: #c46207;
+    --clr_lightClay: #e89e6a;
+    --div_lrg_padding: ;
+    --div_med_padding: ;
+    --div_sm_padding: ;
+    --div_marginTopBtm: ;
+    --div_center: ;
+    --font_weird: 'Weird', sans-serif;
+    --font_standard: 'Standard', sans-serif;
+}
+.navbar {
+    width: 100%;
+    padding: 1rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background: gray;
+    font-family: var(--font_standard);
+    position: absolute;
+    bottom: 0;
+}
+.nav-item {
+    display: inline-block;
+    margin: 0 2rem;
+    position: relative;
+    transition: all 700ms ease-in-out;
+}
+.nav-item a {
+    font-size: 2rem;
+    color: var(--clr_lightSeafoamGreen);
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .8);
+    transition: all 700ms ease-in-out;
+}
+.navBtn {
+    font-size: 2rem;
+    color: var(--clr_lightSeafoamGreen);
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .8);
+    background: transparent;
+    font-family: var(--font_standard);
+    cursor: pointer;
+    transition: all 700ms ease-in-out;
+}
+#portBtn:hover ~ .sub-nav {
+    display: flex;
+}
+.nav-item a:hover:not(.sub-nav), .navBtn:hover:not(.sub-nav) {
+    color: var(--clr_clay);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .8);
+}
+.sub-nav {
+    padding: 1rem 0;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 1px solid var(--clr_lightClay);
+    position: absolute;
+    top: 70px;
+    z-index: 5;
+}
+.sub-nav.show {
+    display: flex;
+}
+.sub-nav a {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .8);
+}
+.responsive-container {
+
+}
+.rCont {
+    transition: transform 1.25s ease-in-out;
+    transition: opacity 2.5s ease-in-out;
+}
+.rCont.hide {
+    transform: translateX(-400%);
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+.rCont.show {
+    /* transform: translateX(0%); */
+}
+.introduction {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: center; */
+    position: relative;
+    background: var(--clr_brown);
+    border-radius: 0 0 10px 0;
+    letter-spacing: .3rem;
+}
+.introduction div {
+    margin: 0 auto;
+}
+.introduction h1 {
+    width: fit-content;
+    font-size: 6rem;
+    letter-spacing: .5rem;
+    margin-bottom: 1.5rem;
+    /* text-shadow: 2px 2px 8px rgba(255, 255, 255, .8); */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .8);
+}
+.introduction h2 {
+    width: fit-content;
+    font-size: 1.3rem;
+    letter-spacing: .5rem;
+    /* text-shadow: 2px 2px 8px rgba(255, 255, 255, .8); */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .8);
+}
+.introduction h3 {
+    width: fit-content;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .8);
+}
+.introduction .about-me {
+    justify-self: left;
+    border-left: 1px solid var(--clr_seafoamGreen);
+    padding-left: 15px;
+}
+.introduction p {
+    width: 720px;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .8);
+}
+.introduction .desc {
+    margin-left: 2rem;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.introduction .img {
+    width: 400px;
+    margin-left: auto;
+    margin-right: 0;
+    background: transparent;
+}
+.introduction div img {
+    width: 350px;
+    border-radius: 50%;
+    filter: sepia(100%);
+    object-fit: cover;
+    box-shadow: 8px 9px 1px rgba(0, 0, 0, .5);
+}
+.featured {
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 0;
+    background: wheat;
+    color: var(--bkg_darkestGreen);
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, .8);
+    position: relative;
+}
+.featured h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    color: var(--bkg_darkestGreen);
+}
+.featured .carousel {
+    width: 400px;
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.featured .img {
+    width: 400px;
+    height: 400px;
+    transform: translateX(0px);
+}
+.featured .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.featured .carousel-wrapper {
+    width: 100%;
+    position: relative;
+}
+.featured .carousel-wrapper button {
+    width: 32px;
+    background: transparent;
+    transform: translateY(-50%);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+.featured .carousel-wrapper button img {
+    width: 64px;
+    height: auto;
+}
+.featured .carousel-wrapper #left {
+    left: 25%;
+}
+.featured .carousel-wrapper #right {
+    right: 28%;
+}
+.locations {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    text-align: center;
+}
+.locations h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: .25rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .8);
+}
+.locations h3 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: .25rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .8);
+}
+.locations form {
+    width: 800px;
+    height: 900px;
+    backdrop-filter: blur(10px);
+    margin: 0 auto 2rem;
+    padding: 4rem 0 0;
+    background: #448e73;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.locations form input {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 4px;
+    padding: 1rem 8px;
+    font-size: 1.25rem;
+    font-family: 'Chopin', sans-serif;
+    text-align: left;
+}
+.locations form button {
+    width: fit-content;
+    height: auto;
+    padding: .75rem 1.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 4px;
+    letter-spacing: .15rem;
+}
+.locations form div {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.locations form div input {
+    width: fit-content;
+}
+.locations form div label {
+    width: 100%;
+    word-break: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.locations .img {
+    width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    justify-self: center;
+    position: relative;
+}
+.locations .img .overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, .8) 0%, transparent 80% );
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+.locations .img img {
+    filter: saturate(0);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* MAP */
+#map {
+    height: 580px; 
+    width: 550px;
+    border-radius: 50%;
+    margin: 2rem auto;
+    position: relative;
+}
+#map h3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+}
+@media (max-width: 1026px) {
+    .navbar {
+        width: 100%;
+    }
+    .nav-item a {
+        font-size: 1.5rem;
+    }
+    .nav-item button {
+        font-size: 1.5rem;
+    }
+    .introduction h1 {
+        font-size: 3rem;
+    }
+    .introduction p {
+        width: 100%;
+    }
+    .locations {
+        display: flex;
+        flex-direction: column;
+    }
+    .locations form {
+        margin-bottom: 2rem;
+        background: linear-gradient(300deg, transparent 0%, var(--clr_seafoamGreen) 10%, var(--clr_seafoamGreen) 55%, transparent 100%);
+    }
+    .locations .img {
+        width: 800px;
+        height: auto;
+    }
+}
+@media (max-width:776px) {
+    header {
+        width: 100%;
+        max-width: 775px;
+        position: relative;
+    }
+    .navbar {
+        max-width: 775px;
+    }
+    .navbar a {
+        font-size: 1rem;
+    }
+    .navbar[aria-expanded="false"] {
+        display: none;
+    }
+    .introduction {
+        padding: 4rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        line-height: 2rem;
+    }
+    .introduction h1, .introduction h2, .introduction h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .introduction h1 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+    .introduction .img {
+        max-width: 350px;
+        margin: 0;
+        justify-self: center;
+    }
+    .introduction .img img {
+        max-width: 350px;
+        justify-self: center;
+        object-fit: cover;
+    }
+    .introduction .desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+        margin: 0;
+    }
+    .introduction .about-me {
+        margin: 2rem 0;
+        padding-left: 0;
+        border-left: none;
+        text-align: center;
+    }
+    .introduction .about-me p {
+        font-size: .75rem;
+        text-align: left;
+        line-height: 2rem;
+    }
+    .about-me h3 {
+        display: block;
+        margin: 1rem auto;
+        width: fit-content;
+        text-align: center;
+    }
+    .introduction .desc {
+        text-align: center;
+    }
+    .introduction p {
+        width: fit-content;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        letter-spacing: .3rem;
+        border-left: none;
+    }
+    .responsive-container {
+        width: 100%;
+        max-width: 775px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .locations {
+        max-width: 720px;
+    }
+    .locations form {
+        width: 100%;
+        max-width: 720px;
+    }
+    .locations .img {
+        max-width: 720px;
+    }
+    .locations h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .responsive-container {
+        max-width: 640px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    .rCont {
+        width: 100%;
+        max-width: 376px;
+    }
+    header {
+        width: 100%;
+        position: relative;
+    }
+    .navbar {
+        max-width: 775px;
+    }
+    .navbar a {
+        font-size: 1rem;
+    }
+    .navbar[aria-expanded="false"] {
+        display: none;
+    }
+    .introduction {
+        width: 100%;
+        padding: 4rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .introduction h1, .introduction h2, .introduction h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .introduction h1 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+    .introduction .desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+        margin: 0;
+    }
+    .introduction .about-me {
+        margin: 2rem 0;
+        padding-left: 0;
+        border-left: none;
+        text-align: center;
+    }
+    .about-me h3 {
+        display: block;
+        margin: 1rem auto;
+        width: fit-content;
+        text-align: center;
+    }
+    .introduction .desc {
+        text-align: center;
+    }
+    .introduction p {
+        width: fit-content;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        letter-spacing: .3rem;
+        border-left: none;
+    }
+    .locations {
+        max-width: 376px;
+        height: auto;
+    }
+    .locations #map {
+        width: 300px;
+        height: 300px;
+    }
+    .locations form {
+        width: 100%;
+        max-width: 376px;
+        height: auto;
+        padding: 2rem;
+    }
+    .locations form input {
+        width: fit-content;
+        min-width: 200px;
+        max-width: 200px;
+        height: auto;
+        font-size: 1rem;
+    }
+    .locations div {
+        width: 100%;
+        max-width: 200px;
+    }
+    .locations #termsCheckbox {
+        width: fit-content;
+        height: auto;
+        flex: 1;
+    }
+    .locations div a {
+        flex: 3;
+    }
+    .locations .img {
+        max-width: 376px;
+    }
+    .locations h2 {
+        font-size: 1.25rem;
+    }
+}
+

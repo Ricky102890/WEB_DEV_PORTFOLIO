@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="/pages/CityPop/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <!-- Website Tab Title -->
+    <title>City Pop Utopia</title>
+</head>
+
+<body>
+<!-- Navigation -->
+    <header id="headerCont">
+        <img src="/pages/CityPop/img/selfyVaporwave.png" class="header-logo">
+        <nav>
+            <a href="../../index.html" class="nav-links">CJAXDEV PORTFOLIO</a>
+            <a href="#" class="nav-links">The City</a>
+            <a href="#" class="nav-links">Digital Locations</a>
+            <a href="#" class="nav-links">Gallery</a>
+        </nav>
+        <button type="menu" id="showContent">Become A Citizen</button>
+    </header>
+
+<!-- Login Area -->
+    <div class="join-container">
+        <form action="#">
+            <div class="join-user">
+            <label>USERNAME</label>
+            <br>
+            <input type="text" class="join-user-input" required>
+            <span class="join-icon"></span>
+            </div>
+            <div class="join-pass">
+                <label>PASSWORD</label>
+                <br>
+                <input type="password" class="join-pass-input" required>
+                <span class="join-icon"></span>
+            </div>
+            <div class="remember">
+                <input type="checkbox">
+                <label>Remember me</label>
+            </div>
+            <button type="submit" class="join-btn">Access Utopia</button>
+            <div class="forgot">
+                <a href="#" class="forgot-link">Forgot Password?</a>
+            </div>  
+        </form>
+            <div class="register">
+                <span class="register-text">Not a Citizen Yet?</span>
+                <br>
+                <span class="register-text"><button id="register-button">Click here</button> to become a citizen</span>
+            </div>
+    </div>
+
+<!-- Register Area -->
+    <div class="register-container">
+        <form action="#">
+            <div class="register-name">
+                <label>Full Name</label>
+                <br>
+                <input type="text" class="register-name-input" id="fName" placeholder="First Name" max="18" required>
+                <br>
+                <input type="text" class="register-name-input" id="mName" placeholder="Middle Inital" min="1" max="1" required>
+                <br>
+                <input type="text" class="register-name-input" id="lName" placeholder="Last Name" max="18" required>
+                <br>
+                <span class="register-icon"></span>
+            </div>
+            <div class="register-info">
+                <label>Information</label>
+                <br>
+                <label>Date of Birth</label>
+                <br>
+                <input type="date" class="register-dob-input" id="dob" placeholder="Date Of Birth" required>
+                <br>
+                <label>Email</label>
+                <br>
+                <input type="email" class="register-email-input" id="regEmail" placeholder="Email Address" required>
+                <br>
+                <label>Phone Number</label>
+                <br>
+                <input type="tel" class="register-tel-input" id="tel" placeholder="" max="14" required>
+                <br>
+                <span class="register-icon"></span>
+            </div>
+            <div class="register-user">
+            <label>CREATE USERNAME</label>
+            <br>
+            <input type="text" class="register-user-input" id="newUser" required>
+            <span class="register-icon"></span>
+            </div>
+            <div class="register-pass">
+                <label>CREATE PASSWORD</label>
+                <br>
+                <input type="password" class="register-pass-input" id="newPass" required>
+                <span class="join-icon"></span>
+            </div>
+            <button onclick="registerInfo()" class="register-btn">Register as Citizen</button>
+        </form>
+        <div class="return">
+            <span>Already a Citizen?</span>
+            <br>
+            <button id="return-btn">Back to Login</button>
+        </div>
+    </div>
+
+
+<!-- Main -->
+    <div class="homepage-body">
+
+        <div class="intro-citypop hidden">
+
+            <h1>Welcome to the Digital City<br><span class="highlight-heading">City Pop Utopia</span></h1>
+            <p class="intro-paragraphI hidden">
+                The world as we know it is losing itself as the technological nightmare we all feared from our favorite sci-fi horror films, it is among us. Today we dive deep into the safety of nostalgia and grace. This version of <span class="highlight-heading">City Pop Utopia</span>
+            </p>
+            <h2>City Pop ?</h2>
+            <p class="intro-paragraphI hidden">City Pop is a term we use with honor. It has become the marker for all those pre-social media platforms which we will not name due to the links at the bottom of the page. Come here to create stories of your life in <span class="highlight-heading">City Pop Utopia</span>.
+            At some point in your life, escape is the next best option, we welcome you to endulge in all the retro wonder we have to offer.</p>
+            <span>More info on what <a href="https://en.wikipedia.org/wiki/City_pop" target="_blank"><span class="highligh-heading">City Pop</span></a> actually is.</span>
+        </div>
+
+        <div class="citypop-section hidden">
+
+            <h1>CHATGPT<br><span class="highlight-heading">VS CODE COPILOT</span></h1>
+            <p class="intro-paragraph hidden">
+                Seems like after COVID - 19 we all needed or rather wanted option to work form home. While it has been almost 4 years now since the shutdown to change the world, alot of us folk got into the tech side of things. We journey to new lands on circut boards and binaries. The tool most of us have learn to use in web, app, and anything creative in the field of coding is... Visual Studio Code. Now we have A.I.
+            </p>
+            <h2>A.I. Meets Our Favorite Softwares</h2>
+            <p class="intro-paragraph hidden">Adapt or Die seems to be a reacurring event in our societal shifts. So much advancement so fast, could we slow down before we start coexisting with a hand in code. For all those interested the time to ride the last waves is now. Don't be forgotten in the new age upon us.</p>
+        </div>
+
+        <div class="citypop-section hidden">
+
+            <h1>Check Out<br><span class="highlight-heading">New Episodes - Anime</span></h1>
+            
+            <div id="imgBox">
+
+                <div id="img-overlay">
+                    <h3>Zom 100</h3>
+                </div>
+                <img src="/pages/CityPop/img/zom 100.jpg" class="section-img">
+            
+            </div>
+            <p class="intro-paragraph hidden">
+                The world as we know it is losing itself as the technological nightmare we all feared from our favorite sci-fi horror films, it is among us. Today we dive deep into the safety of nostalgia and grace. This version of <span class="highlight-heading">City Pop Utopia</span>
+            </p>
+            <h2>Zom 100 & Jujutsu Kaisen</h2>
+            <p class="intro-paragraph">Splatoon meets Post-Apocylptic Zombie Outbreak in modern day Tokyo, join this hard-working underdog use his knowledge of Survival Games and Pop Culture thrive his way through this EPIC NEW ANIME - Currently on EP 5</p>
+            <p class="intro-paragraph">It's back in session after a long wait and an EPIC Movie i might add, Jujutsu Kaisen 0 left us putting pieces to this epic shonen and upcoming top shonen anime to date. Join them from Gojo and pals Origins as teens making a name for themselves.</p>
+        </div>
+
+        <div class="citypop-section hidden">
+            
+            <h1>Neo RnB<br><span class="highlight-heading">Music is not dying, peoples taste in it is.</span></h1>
+            <p class="intro-paragraph">
+                Some of the best tunes i've heard in my life has come from music streaming services like apple music, spotify, and youtube red. Let's not ever utter the cliche music is dead ever again. It seems as thought people are finding it hard with all this convienient tech in our hands and all around us to actually explore out own musical resonance. Let's not forget we are not limited to radio and heavy plastic with tape and scratchable surfaces.<span class="highlight-heading">City Pop Utopia</span>
+            </p>
+            <h2>City Pop ?</h2>
+            <p class="intro-paragraph">City Pop is a term we use with honor. It has become the marker for all those pre-social media platforms which we will not name due to the links at the bottom of the page. Come here to create stories of your life in <span class="highlight-heading">City Pop Utopia</span>.
+            At some point in your life, escape is the next best option, we welcome you to endulge in all the retro wonder we have to offer.</p>
+        </div>
+
+    </div>
+
+
+    <div class="digital-container hidden">
+        <img src="/pages/CityPop/img/feat1.jpg" alt="" class="feat-imgs">
+        <img src="/pages/CityPop/img/feat2.jpg" alt="" class="feat-imgs">
+        <img src="/pages/CityPop/img/feat3.jpg" alt="" class="feat-imgs">
+        <img src="/pages/CityPop/img/feat4.jpg" alt="" class="feat-imgs">
+    </div>
+
+    <footer>
+        <div class="social-link-container">
+
+            <a href="#" class="social-links"><img src="/pages/CityPop/img/tiktok.png" class="social-imgs"></a>
+            <a href="#" class="social-links"><img src="/pages/CityPop/img/twitter.png" class="social-imgs"></a>
+            <a href="#" class="social-links"><img src="/pages/CityPop/img/you.png" class="social-imgs"></a>
+            <a href="#" class="social-links"><img src="/pages/CityPop/img/pin.png" class="social-imgs"></a>
+            <a href="#" class="social-links"><img src="/pages/CityPop/img/insta.png" class="social-imgs"></a>
+            <a href="#" class="social-links"><img src="/pages/CityPop/img/fb.png" class="social-imgs"></a>
+        </div>
+
+        <div class="legal-container">
+            <a href="#" class="legal-links">Terms & Conditions</a>
+            <a href="#" class="legal-links">City Pop Utopia Copyright &#169 2023</a>
+            <a href="#" class="legal-links">Contact Us</a>
+        </div>
+
+    </footer>
+<script src="/pages/CityPop/js/script.js"></script>
+</body>
+</html>

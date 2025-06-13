@@ -1,0 +1,52 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Weird';
+    src: url(../../ASSETS/FONTS/weird/Weird.ttf);
+} 
+ @font-face {
+    font-family: 'Standard';
+    src: url(../../ASSETS/FONTS/abeatbykai/ABEAKRG.TTF);
+ }
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    position: relative;
+    background: var(--bkg_darkestGreen);
+    color: var(--clr_lightSeafoamGreen);
+    font-family: var(--font_standard);
+    /* font-family: 'Chopin', sans-serif; */
+    overflow-x: hidden;
+}
+header {
+    width: 100%;
+    height: 200px;
+    padding: 2rem 0;
+    background-image: url(/MEDIA/IMAGES/bkg-header.webp);
+    position: relative;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+}
+div {
+
+}
+ul {
+    list-style-type: none;
+}
+li {
+    
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+}
