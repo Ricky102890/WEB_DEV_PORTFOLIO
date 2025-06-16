@@ -116,7 +116,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background: var(--clr__black);
+        background: var(--clr__main_bkg_darkBlue);
     }
     .agenda-controls > input {
         display: block;
@@ -150,7 +150,7 @@
         width: 100%;
         height: 25vh;
         padding-top: 2rem;
-        background: var(--clr__black);
+        background: var(--clr__main_bkg_darkBlue);
     }
     .list-container {
         width: 75%;
@@ -255,7 +255,7 @@
         height: auto;
         padding: 1rem;
         margin: 0 auto;
-        background: var(--clr__black);
+        background: var(--clr__main_bkg_darkBlue);
         text-align: center;
         display: grid;
         justify-items: center;
@@ -347,7 +347,7 @@
 }
     /* Smallest Devices */
     
-    @media (max-width: 320px) {
+    @media (max-width: 845px) {
     /* HTML */
     html {
         scroll-behavior: smooth;
@@ -356,17 +356,65 @@
     /* Body */
     body {
         width: 100%;
-        max-width: 320px;
     }
     
     /* Viewport Container */
     .container {
         width: 100%;
-        padding-left: .5rem;
-        padding-right: .5rem;
+        height: auto;
+        min-height: 100vh;
         margin-left: auto;
         margin-right: auto;
+        padding: 0;
         overflow-x: hidden;
     }
-    
+    .navbar {
+
+    }
+    .navbar li {
+        margin: 0 auto;
+        padding: .25rem;
+    }
+    .navbar li a {
+        padding: .5rem .25rem;
+        text-align: center;
+        font-size: .5rem;
+    }
+    .agenda-wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .agenda-header {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .agenda-header p {
+        font-size: .5rem;
+    }
+    .agenda-header .pop-one {
+        color: white;
+    }
+    .agenda-controls {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .agenda-controls input {
+        width: 100%;
+        margin: 0 auto 1rem;
+    }
+    .agenda-controls button {
+        margin: 0 auto;
+    }
+    .edit-btn {
+        font-size: .5rem;
+    }
+    .btn-img {
+        width: 10px;
+        height: 10px;
+    }
 }

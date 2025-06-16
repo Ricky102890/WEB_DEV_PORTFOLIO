@@ -32,9 +32,7 @@ function clearInput() {
     let inputResult = document.createElement("input");
     let ListBtnBox = document.createElement("div");
     let editBtn = document.createElement("button");
-    let subBtn = document.createElement("button");
     let delBtn = document.createElement("button");
-    let subBtnImg = document.createElement("img");
     let delBtnImg = document.createElement("img");
     
     // Add Information to List Item 
@@ -42,13 +40,10 @@ function clearInput() {
     ListBtnBox.classList.add("list-btn-box");
     inputResult.classList.add("list-input");
     editBtn.classList.add("edit-btn");
-    subBtn.classList.add("btn");
     delBtn.classList.add("btn");
     delBtn.classList.add("del-btn");
-    subBtnImg.classList.add("btn-img");
     delBtnImg.classList.add("btn-img");
-    subBtnImg.src = "/media/icons/general-icons/del.svg";
-    delBtnImg.src = "/media/icons/misc-icons/clear.png";
+    delBtnImg.src = "/pages/Agenda.IO/media/icons/misc-icons/clear.png";
     editBtn.innerHTML = "edit";
     inputResult.readOnly = true;
     inputResult.value = inputArea.value;
@@ -64,18 +59,12 @@ function clearInput() {
 
     // Adds Buttons to Button Box
     ListBtnBox.appendChild(editBtn);
-    ListBtnBox.appendChild(subBtn);
     ListBtnBox.appendChild(delBtn);
 
     // Add Images inside of buttons (icons that function to edit current list)
-    subBtn.appendChild(subBtnImg);
     delBtn.appendChild(delBtnImg);
 
     clearInput();
-    
-    subBtn.addEventListener("click", () => {
-        listContainer.removeChild(ListItemBox);
-    });
 
     editBtn.addEventListener("click", () => {
         if (inputResult.readOnly == true) {
@@ -93,11 +82,11 @@ function clearInput() {
             editBtn.style.color = "#ffbd2e";
         }
     });
+    // Mass Delete Button
     //!!NOT WORKING - WANT TO REMOVE ALL CHILDREN FROM PARENT CONTAINER
-    // delBtn.addEventListener("click", () => {
-    //     listContainer.removeChild(listContainer.child);
-
-    // })   
+    delBtn.addEventListener("click", () => {
+        listContainer.removeChild(ListItemBox);
+    })   
 }
 
 // Add List Item (click button)

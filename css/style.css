@@ -833,23 +833,27 @@ nav {
         padding: 2rem;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 2rem;
         overflow: hidden;
     }
     .about_intro {
         display: flex;
         flex-direction: column;
+        gap: 1rem;
     }
     .about_title {
         display: flex;
         flex-direction: column;
+        gap: .25rem;
     }
     .about_author {
         display: flex;
         flex-direction: column;
     }
     .about_author h4 {
-
+        margin-bottom: .25rem;
     }
     .about_author span {
         display: block;
@@ -860,19 +864,20 @@ nav {
         gap: 1rem;
     }
     .about_author_pics img {
-        width: 300px;
+        width: 250px;
         height: auto;
         object-fit: cover;
     }
     .about_author_links {
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
     }
     .about_author_link {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        gap: 1rem;
     }
     .about_author_link a {
         text-decoration: underline;
@@ -907,5 +912,8 @@ nav {
     .about_author_connect button {
         padding: .5rem 1rem;
         background: gray;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
     }
 }
