@@ -20,26 +20,29 @@
 </head>
 <body>
     <header>
-        <ul class="navbar" aria-expanded="false">
-            <li class="nav-item">
-                <a href="../../index.html">CJAXDEV PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-                <button class="navBtn" id="portBtn">PORTFOLIO</button>
-                <div class="sub-nav" id="subNavOne">
-                    <a href="/pages/Antoine_Mowatt/index.html">SKETCHES</a>
-                    <a href="/pages/Antoine_Mowatt/index.html">PROJECTS</a>
-                    <a href="/pages/Antoine_Mowatt/index.html">UNDER CONSTRUCTION</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a href="#">ABOUT ME</a>
-            </li>
-            <li class="nav-item">
-                <a href="#">FOLLOW ME</a>
-            </li>
-            
-        </ul>
+        <nav>
+            <button id="hamOpen" aria-expanded="false" aria-controls="navbar"><img src="/pages/Antoine_Mowatt/MEDIA/IMAGES/icons/ham.svg" alt=""></button>
+            <ul class="navbar" >
+                <li class="nav-item">
+                    <a href="../../index.html">CJAXDEV PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <button class="navBtn" id="portBtn">PORTFOLIO</button>
+                    <div class="sub-nav" id="subNavOne">
+                        <a href="/pages/Antoine_Mowatt/index.html">SKETCHES</a>
+                        <a href="/pages/Antoine_Mowatt/index.html">PROJECTS</a>
+                        <a href="/pages/Antoine_Mowatt/index.html">UNDER CONSTRUCTION</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">ABOUT ME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">FOLLOW ME</a>
+                </li>
+            </ul>
+        </nav>
+        
     </header>
     <div class="responsive-container">
         <div class="rCont hide introduction">
@@ -61,25 +64,20 @@
             </div>
 
             <div class="rCont hide img">
-                <img src="/pages/Antoine Mowatt/MEDIA/IMAGES/toine-main.jpg" alt="Antoine Profile">
+                <img src="/pages/Antoine_Mowatt/MEDIA/IMAGES/toine-main.jpg" alt="Antoine Profile">
             </div>
 
         </div>
 
+        <!-- Rebuild Carousel -->
         <div class="rCont hide featured">
-            <h2>
-                Capturing the Artist
-            </h2>
-            <div class="carousel-wrapper">
-                <button id="left"><span class="img"><img src="/MEDIA/IMAGES/icons/left-arrow-white.svg" alt=""></span></button>
-                <ul class="carousel">
-                    <li><div class="img"><img src="/pages/Antoine_Mowatt/MEDIA/IMAGES/toine-3.png" alt=""></div></li>
-                    <li><div class="img"><img src="/pages/Antoine_Mowatt/MEDIA/IMAGES/toine-4.jpg" alt=""></div></li>
-                    <li><div class="img"><img src="/pages/Antoine _owatt/MEDIA/IMAGES/toine-6.jpg" alt=""></div></li>
-                </ul>  
-                <button id="right"><span class="img"><img src="/pages/Antoine_Mowatt/MEDIA/IMAGES/icons/right-arrow-white.svg" alt=""></span></button>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="#" alt="Artist Capture">
+                    </div>
+                </div>
             </div>
-            
         </div>
 
         <div class="rCont locations">

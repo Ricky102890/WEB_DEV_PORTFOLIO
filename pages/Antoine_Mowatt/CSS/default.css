@@ -19,7 +19,7 @@ body {
     height: auto;
     min-height: 100vh;
     position: relative;
-    background: var(--bkg_darkestGreen);
+    background: white;
     color: var(--clr_lightSeafoamGreen);
     font-family: var(--font_standard);
     /* font-family: 'Chopin', sans-serif; */
@@ -28,7 +28,7 @@ body {
 header {
     width: 100%;
     height: 200px;
-    padding: 2rem 0;
+    padding: 0;
     background-image: url(/MEDIA/IMAGES/bkg-header.webp);
     position: relative;
 }
@@ -42,7 +42,7 @@ ul {
     list-style-type: none;
 }
 li {
-    
+    display: inline-block;
 }
 a {
     text-decoration: none;
