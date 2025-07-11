@@ -140,7 +140,7 @@ nav {
     animation: swing-in-top-fwd linear;
     animation-timeline: view();
     /* animation-timeline: scroll(); */
-    animation-range: entry 10% cover 60%;
+    animation-range: 0% cover 20%;
 }
 /* Feed Item Keyframes */
 @keyframes swing-in-top-fwd {
