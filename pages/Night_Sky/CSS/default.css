@@ -1,0 +1,39 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Cosmic';
+    src: url(/pages/Night_Sky/ASSETS/font_files/cosmic.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    position: relative;
+    background: black;
+    color: gray;
+    overflow-x: hidden;
+    color: rgb(156, 156, 156);
+    font-family: 'Cosmic', sans-serif;
+    letter-spacing: .15rem;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
