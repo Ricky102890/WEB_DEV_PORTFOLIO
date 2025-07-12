@@ -56,3 +56,16 @@ function showFeatOne() {
     });
 }
 showFeatOne();
+
+function blastLetter() {
+    const letterInput = document.getElementById('word_x');
+    let blast_output = document.getElementById('blast_output');
+    letterInput.addEventListener('input', () => {
+        blast_output.innerHTML = letterInput.value;
+        blast_output.classList.add('blast_state');
+        setTimeout(() => {
+            blast_output.classList.remove('blast_state');
+        }, 500);
+    });
+}
+blastLetter();
