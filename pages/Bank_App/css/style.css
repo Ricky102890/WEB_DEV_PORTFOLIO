@@ -8,9 +8,9 @@
 /* Root */
 
 :root {
-    --main-clr: #ffd900;
-    --secondary-clr: rgb(0, 40, 255);
-    --third-clr: #0a3853;
+    --main-clr: #404040;
+    --secondary-clr: #317189;
+    --third-clr: white;
     --white-bkg: rgb(255, 255, 255);
     --overlay-clr: rgba(64, 64, 64, .4);
     --black-font: rgb(0, 0, 0);
@@ -38,6 +38,7 @@ body {
     background-size: contain;
     font-family: var(--font-face);
     position: relative;
+    color: white;
 }
 
 .bkg {
@@ -52,15 +53,15 @@ body {
 /* Navigation */
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--main-clr);
     width: 100%;
     height: 60px;
     padding: .5em;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--main-clr);
     box-shadow: 4px 0 8px var(--dark-shadow);
     position: relative;
 }
@@ -74,14 +75,38 @@ header nav {
     height: auto;
     background: transparent;
 }
-
+header h1 {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 header h1 a {
     cursor: pointer;
     color: var(--third-clr);
     text-shadow: 2px 0 6px var(--light-shadow);
     text-decoration: none;
 }
-
+header #ham_btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 3rem;
+}
+header #close_nav_icon {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+#ham_btn[aria-expanded="false"] {
+    display: none;
+}
+#ham_btn[aria-expanded="false"] ~ #close_nav_icon {
+    display: none;
+}
 nav a {
     text-decoration: none;
     font-size: 12px;
@@ -143,7 +168,7 @@ nav a {
     display: block;
     background-color: var(--main-clr);
     position: absolute;
-    top: 25px;
+    top: 40px;
     left: -8px;
     width: fit-content;
     height: auto;
@@ -160,7 +185,7 @@ nav a {
     transition: all 350ms ease-in-out;
 }
 #drp-content-one a:hover {
-    color: black;
+    color: var(--secondary-clr);
     scale: 110%;
 }
 /* Small Business Drop Down Area Styling */
@@ -191,7 +216,7 @@ nav a {
     display: block;
     background-color: var(--main-clr);
     position: absolute;
-    top: 25px;
+    top: 40px;
     left: -8px;
     width: fit-content;
     height: auto;
@@ -208,7 +233,7 @@ nav a {
     transition: all 750ms ease-in-out;
 }
 #drp-content-two a:hover {
-    color: black;
+    color: var(--secondary-clr);
     scale: 110%;
 }
 /* Crypto Logo  */
@@ -283,7 +308,7 @@ main {
 .enigma-container-two h4 {
     margin-bottom: 1em;
     text-decoration: underline;
-    color: black;
+    color: white;
     font-weight: 500;
     font-size: 14px;
     text-shadow: 2px 0 4px var(--light-shadow);
@@ -298,7 +323,7 @@ main {
 
 .forum-link {
     text-decoration: underline;
-    color: black;
+    color: var(--secondary-clr);
 }
 
 .forum-link:active {
@@ -310,7 +335,7 @@ main {
 }
 
 .forum-link:hover {
-    color: rgba(64, 64, 64, .4);
+    color: var();
 }
 /* Section Three */
 
@@ -333,8 +358,9 @@ main {
     margin-top: 1em;
     padding: 3em;
     color: white;
-    background-color: var(--third-clr);
+    background-color: var(--main-clr);
     border-bottom: solid white 3px;
+    border-radius: 4px;
 }
 
 .bank-box button {
@@ -534,7 +560,8 @@ form {
     text-align: center;
 }
 #login-form-container {
-    background-color: var(--third-clr);
+    background-color: var(--main-clr);
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -572,7 +599,7 @@ form {
     text-align: center;
 }
 .signup-container {
-    background-color: var(--third-clr);
+    background-color: var(--main-clr);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -663,3 +690,92 @@ form {
     color: black;
 }
 
+@media (max-width: 470px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: none;
+        align-items: center;
+    }
+    header h1 {
+        width: fit-content;
+        height: auto;
+        vertical-align: center;
+    }
+    header h1 a {
+        font-size: 1rem;
+    }
+    header #ham_btn {
+    background: transparent;
+    border: none;
+    }
+    header #close_nav_icon {
+    display: none;
+    }
+    #ham_btn[aria-expanded="false"] {
+        display: block;
+        cursor: pointer;
+        transition: all 700ms ease-in-out;
+    }
+    #ham_btn[aria-expanded="false"] ~ #close_nav_icon {
+        display: none;
+    }
+    #ham_btn[aria-expanded="true"] ~ #close_nav_icon {
+        display: block;
+    }
+    #ham_btn[aria-expanded="false"] ~ nav {
+        display: none;
+        transition: all 700ms ease-in-out;
+    }
+    #ham_btn[aria-expanded="true"] {
+        cursor: pointer;
+        transition: all 700ms ease-in-out;
+    }
+    #ham_btn[aria-expanded="true"].rotate_trans {
+        cursor: pointer;
+        transform: rotate(90deg);
+    }
+    #ham_btn[aria-expanded="true"] ~ nav {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 1rem 2rem;
+        background: var(--main-clr);
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        transition: all 700ms ease-in-out;
+    }
+    #ham_btn[aria-expanded="true"] ~ nav.rotate_trans {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 1rem 2rem;
+        background: var(--main-clr);
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+    #ham_btn[aria-expanded="true"] ~ nav #drp-content-one {
+        display: none;
+    }
+    #ham_btn[aria-expanded="true"] ~ nav #drp-content-two {
+        display: none;
+    }
+    main {
+        width: 100%;
+        padding: .5rem;
+    }
+}
