@@ -18,6 +18,7 @@
     <div class="responsive">
         <header>
             <nav>
+                <button class="ham_btn" id="ham_btn" aria-expanded="false" aria-controls="main_navbar"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
                 <ul class="navbar" id="main_navbar">
                     <li class="nav_item">
                         <button class="nav_btn" id="#">
@@ -74,7 +75,7 @@
         <div class="feed">
             <!-- Feed Options -->
             <div class="feed_header">
-                <img src="/pages/Night_Sky/MEDIA/ICONS/constellation.svg" alt="Night Sky Logo" class="logo">
+                <img src="/pages/Night_Sky/MEDIA/IMAGES/night_sky_logo6.png" alt="Night Sky Logo" class="logo">
                 <h1>NightSky</h1>
                 <button id="discover_btn">Discover</button>
                 <button id="following_btn">Following</button>
@@ -175,389 +176,20 @@
                     </div>
                 </div>
             </div>
-            <div class="feed_item">
-                <!-- Feed Profile Summary Section -->
-                <div class="feed_profile_content">
-                    <div class="feed_profile_img">
-                        <img src="/pages/Night_Sky/MEDIA/IMAGES/default_profile.jpg" alt="Profile Pic">
-                    </div>
-
-                    <div class="feed_profile_info">
-                        <a href="#" class="profile_link">@JonDow.nightSky.social</a>
-                        <span>~</span>
-                        <span class="post_age">4h</span>
-                    </div>
-                </div>
-                <div class="feed_post">
-                    <span class="feed_text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam aut quae omnis ratione accusamus, quos nostrum deserunt provident nam?
-                    </span>
-                    <div class="feed_post_controls">
-                        <button><i class="fa-regular fa-heart fa-lg" style="color: #ff0000;"></i></button>
-                        <!-- Filled Heart -->
-                        <!-- <i class="fa-solid fa-heart fa-lg" style="color: #ff0000;"></i> -->
-                        <button><i class="fa-solid fa-retweet fa-lg" style="color: #3d6689;"></i></button>
-                        <button><i class="fa-regular fa-bookmark fa-lg" style="color: #3d6689;"></i></button>
-                        <!-- Filled Bookmark -->
-                         <!-- <i class="fa-solid fa-bookmark fa-lg" style="color: #3d6689;"></i> -->
-                    </div>
-                </div>
-                <div class="feed_peek">
-                    <div class="peek_intro">
-
-                        <div class="peek_pic">
-                            <div class="img_scaler">
-                                <img src="/pages/Night_Sky/MEDIA/ICONS/profile_default.svg" alt="">
-                            </div>
-                        </div>
-
-                        <label>
-                            <div class="img_scaler">
-                                <img src="/pages/Night_Sky/MEDIA/ICONS/profile_default.svg" alt="">
-                            </div>
-                            <button class="request_btn">Following</button>
-                        </label>
-
-                    </div>
-
-                    <div class="peek_info">
-                        
-                        <div class="peek_names">
-                            <div class="peek_name_wrapper">
-                                <span class="peek_name" id="peek_name">Jon Dow</span>
-                            </div>
-                            <div class="peek_alias">
-                                <span class="peek_request">Follows You</span>
-                                <span class="peek_alias">@JonDow.nsky</span>
-                            </div>
-                        </div>
-                        
-                        <div class="peek_community">
-                            <div class="peek_follows">
-                                <div class="peek_followers">
-                                    <span class="follower_cnt">54k</span>
-                                    <span class="follower_text">followers</span>
-                                </div>
-                                <div class="peek_following">
-                                    <span class="following_cnt">22</span>
-                                    <span class="following_text">following</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="peek_bio">
-                            <span class="peek_bio_content"></span>
-                        </div>
-                        
-                        <div class="peek_links">
-                            <a href="" class="peek_link">Link</a>
-                        </div>
-                        
-                        <div class="peek_mutuals">
-                            <div class="peek_slider">
-                                <div class="peek_slide">
-                                    <img src="#" alt="Profile Pics">
-                                    <a href="#" class="peek_profile_link">Link</a>
-                                </div>
-
-                                <div class="peek_slide">
-                                    <img src="#" alt="Profile Pics">
-                                    <a href="#" class="peek_profile_link">Link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="feed_item">
-                <!-- Feed Profile Summary Section -->
-                <div class="feed_profile_content">
-                    <div class="feed_profile_img">
-                        <img src="/pages/Night_Sky/MEDIA/IMAGES/default_profile.jpg" alt="Profile Pic">
-                    </div>
-
-                    <div class="feed_profile_info">
-                        <a href="#" class="profile_link">@JonDow.nightSky.social</a>
-                        <span>~</span>
-                        <span class="post_age">4h</span>
-                    </div>
-                </div>
-                <div class="feed_post">
-                    <span class="feed_text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam aut quae omnis ratione accusamus, quos nostrum deserunt provident nam?
-                    </span>
-                    <div class="feed_post_controls">
-                        <button><i class="fa-regular fa-heart fa-lg" style="color: #ff0000;"></i></button>
-                        <!-- Filled Heart -->
-                        <!-- <i class="fa-solid fa-heart fa-lg" style="color: #ff0000;"></i> -->
-                        <button><i class="fa-solid fa-retweet fa-lg" style="color: #3d6689;"></i></button>
-                        <button><i class="fa-regular fa-bookmark fa-lg" style="color: #3d6689;"></i></button>
-                        <!-- Filled Bookmark -->
-                         <!-- <i class="fa-solid fa-bookmark fa-lg" style="color: #3d6689;"></i> -->
-                    </div>
-                </div>
-                <div class="feed_peek">
-                    <div class="peek_intro">
-
-                        <div class="peek_pic">
-                            <div class="img_scaler">
-                                <img src="/pages/Night_Sky/MEDIA/ICONS/profile_default.svg" alt="">
-                            </div>
-                        </div>
-
-                        <label>
-                            <div class="img_scaler">
-                                <img src="/pages/Night_Sky/MEDIA/ICONS/profile_default.svg" alt="">
-                            </div>
-                            <button class="request_btn">Following</button>
-                        </label>
-
-                    </div>
-
-                    <div class="peek_info">
-                        
-                        <div class="peek_names">
-                            <div class="peek_name_wrapper">
-                                <span class="peek_name" id="peek_name">Jon Dow</span>
-                            </div>
-                            <div class="peek_alias">
-                                <span class="peek_request">Follows You</span>
-                                <span class="peek_alias">@JonDow.nsky</span>
-                            </div>
-                        </div>
-                        
-                        <div class="peek_community">
-                            <div class="peek_follows">
-                                <div class="peek_followers">
-                                    <span class="follower_cnt">54k</span>
-                                    <span class="follower_text">followers</span>
-                                </div>
-                                <div class="peek_following">
-                                    <span class="following_cnt">22</span>
-                                    <span class="following_text">following</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="peek_bio">
-                            <span class="peek_bio_content"></span>
-                        </div>
-                        
-                        <div class="peek_links">
-                            <a href="" class="peek_link">Link</a>
-                        </div>
-                        
-                        <div class="peek_mutuals">
-                            <div class="peek_slider">
-                                <div class="peek_slide">
-                                    <img src="#" alt="Profile Pics">
-                                    <a href="#" class="peek_profile_link">Link</a>
-                                </div>
-
-                                <div class="peek_slide">
-                                    <img src="#" alt="Profile Pics">
-                                    <a href="#" class="peek_profile_link">Link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="feed_item">
-                <!-- Feed Profile Summary Section -->
-                <div class="feed_profile_content">
-                    <div class="feed_profile_img">
-                        <img src="/pages/Night_Sky/MEDIA/IMAGES/default_profile.jpg" alt="Profile Pic">
-                    </div>
-
-                    <div class="feed_profile_info">
-                        <a href="#" class="profile_link">@JonDow.nightSky.social</a>
-                        <span>~</span>
-                        <span class="post_age">4h</span>
-                    </div>
-                </div>
-                <div class="feed_post">
-                    <span class="feed_text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam aut quae omnis ratione accusamus, quos nostrum deserunt provident nam?
-                    </span>
-                    <div class="feed_post_controls">
-                        <button><i class="fa-regular fa-heart fa-lg" style="color: #ff0000;"></i></button>
-                        <!-- Filled Heart -->
-                        <!-- <i class="fa-solid fa-heart fa-lg" style="color: #ff0000;"></i> -->
-                        <button><i class="fa-solid fa-retweet fa-lg" style="color: #3d6689;"></i></button>
-                        <button><i class="fa-regular fa-bookmark fa-lg" style="color: #3d6689;"></i></button>
-                        <!-- Filled Bookmark -->
-                         <!-- <i class="fa-solid fa-bookmark fa-lg" style="color: #3d6689;"></i> -->
-                    </div>
-                </div>
-                <div class="feed_peek">
-                    <div class="peek_intro">
-
-                        <div class="peek_pic">
-                            <div class="img_scaler">
-                                <img src="/pages/Night_Sky/MEDIA/ICONS/profile_default.svg" alt="">
-                            </div>
-                        </div>
-
-                        <label>
-                            <div class="img_scaler">
-                                <img src="/pages/Night_Sky/MEDIA/ICONS/profile_default.svg" alt="">
-                            </div>
-                            <button class="request_btn">Following</button>
-                        </label>
-
-                    </div>
-
-                    <div class="peek_info">
-                        
-                        <div class="peek_names">
-                            <div class="peek_name_wrapper">
-                                <span class="peek_name" id="peek_name">Jon Dow</span>
-                            </div>
-                            <div class="peek_alias">
-                                <span class="peek_request">Follows You</span>
-                                <span class="peek_alias">@JonDow.nsky</span>
-                            </div>
-                        </div>
-                        
-                        <div class="peek_community">
-                            <div class="peek_follows">
-                                <div class="peek_followers">
-                                    <span class="follower_cnt">54k</span>
-                                    <span class="follower_text">followers</span>
-                                </div>
-                                <div class="peek_following">
-                                    <span class="following_cnt">22</span>
-                                    <span class="following_text">following</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="peek_bio">
-                            <span class="peek_bio_content"></span>
-                        </div>
-                        
-                        <div class="peek_links">
-                            <a href="" class="peek_link">Link</a>
-                        </div>
-                        
-                        <div class="peek_mutuals">
-                            <div class="peek_slider">
-                                <div class="peek_slide">
-                                    <img src="#" alt="Profile Pics">
-                                    <a href="#" class="peek_profile_link">Link</a>
-                                </div>
-
-                                <div class="peek_slide">
-                                    <img src="#" alt="Profile Pics">
-                                    <a href="#" class="peek_profile_link">Link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="feed_item">
-                <!-- Feed Profile Summary Section -->
-                <div class="feed_profile_content">
-                    <div class="feed_profile_img">
-                        <img src="/pages/Night_Sky/MEDIA/IMAGES/default_profile.jpg" alt="Profile Pic">
-                    </div>
-
-                    <div class="feed_profile_info">
-                        <a href="#" class="profile_link">@JonDow.nightSky.social</a>
-                        <span>~</span>
-                        <span class="post_age">4h</span>
-                    </div>
-                </div>
-                <div class="feed_post">
-                    <span class="feed_text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam aut quae omnis ratione accusamus, quos nostrum deserunt provident nam?
-                    </span>
-                    <div class="feed_post_controls">
-                        <button><i class="fa-regular fa-heart fa-lg" style="color: #ff0000;"></i></button>
-                        <!-- Filled Heart -->
-                        <!-- <i class="fa-solid fa-heart fa-lg" style="color: #ff0000;"></i> -->
-                        <button><i class="fa-solid fa-retweet fa-lg" style="color: #3d6689;"></i></button>
-                        <button><i class="fa-regular fa-bookmark fa-lg" style="color: #3d6689;"></i></button>
-                        <!-- Filled Bookmark -->
-                         <!-- <i class="fa-solid fa-bookmark fa-lg" style="color: #3d6689;"></i> -->
-                    </div>
-                </div>
-                <div class="feed_peek">
-                    <div class="peek_intro">
-
-                        <div class="peek_pic">
-                            <div class="img_scaler">
-                                <img src="/pages/Night_Sky/MEDIA/ICONS/profile_default.svg" alt="">
-                            </div>
-                        </div>
-
-                        <label>
-                            <div class="img_scaler">
-                                <img src="/pages/Night_Sky/MEDIA/ICONS/profile_default.svg" alt="">
-                            </div>
-                            <button class="request_btn">Following</button>
-                        </label>
-
-                    </div>
-
-                    <div class="peek_info">
-                        
-                        <div class="peek_names">
-                            <div class="peek_name_wrapper">
-                                <span class="peek_name" id="peek_name">Jon Dow</span>
-                            </div>
-                            <div class="peek_alias">
-                                <span class="peek_request">Follows You</span>
-                                <span class="peek_alias">@JonDow.nsky</span>
-                            </div>
-                        </div>
-                        
-                        <div class="peek_community">
-                            <div class="peek_follows">
-                                <div class="peek_followers">
-                                    <span class="follower_cnt">54k</span>
-                                    <span class="follower_text">followers</span>
-                                </div>
-                                <div class="peek_following">
-                                    <span class="following_cnt">22</span>
-                                    <span class="following_text">following</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="peek_bio">
-                            <span class="peek_bio_content"></span>
-                        </div>
-                        
-                        <div class="peek_links">
-                            <a href="" class="peek_link">Link</a>
-                        </div>
-                        
-                        <div class="peek_mutuals">
-                            <div class="peek_slider">
-                                <div class="peek_slide">
-                                    <img src="#" alt="Profile Pics">
-                                    <a href="#" class="peek_profile_link">Link</a>
-                                </div>
-
-                                <div class="peek_slide">
-                                    <img src="#" alt="Profile Pics">
-                                    <a href="#" class="peek_profile_link">Link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="trends">
             <div class="feed_trend">
-                <div class="search">
-                    <button class="search_icon_btn"><img src="#" alt="Search Icon"></button>
+                <label class="search">
                     <input type="text" class="search_input">
-                </div>
+                    <button class="search_icon_btn" id="search_btn"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+                    <div class="trend_search">
+                        <ul class="trend_search_result_list">
+                            <li class="trend_search_result_item">
+                                <a href="#" class="result_item_link">War</a>
+                            </li>
+                        </ul>
+                    </div>
+                </label>
 
                 <div class="feed_links">
                     <button id="discover_btn2">Discover</button>
@@ -567,8 +199,20 @@
 
             <div class="feed_trending">
                 <div class="trend_intro">
-                    <img src="#" alt="Trending Icon" class="trend_icon">
-                    <span class="trend_title">Trending</span>
+                    <div class="trend_intro_header">
+                        <i class="fa-solid fa-arrow-trend-up" style="color: #ffffff;"></i>
+                        <span class="trend_title">Trending</span>
+                    </div>
+                    <div class="trend_feed">
+                        <div class="trend_feed_item">
+                            <h4>War In Middle East</h4>
+                            <div class="img_scaler">
+                                <img src="#" alt="Image Goes Here">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, doloremque.</p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="trend_wrapper">
@@ -576,10 +220,10 @@
                 </div>
 
                 <div class="trend_footer">
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Careers</a>
                 </div>
             </div>
         </div>
