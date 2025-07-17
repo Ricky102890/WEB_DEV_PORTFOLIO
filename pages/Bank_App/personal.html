@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/pages/Bank_App/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <!-- Browser -->
+    <title>Enigma Banking</title>
+    <link rel="icon" type="x-icon/image" href="#">
+    <!-- JS -->
+    <script src="/pages/Bank_App/js/script.js" defer></script>  
+</head>
+<body>
+    <img class="bkg" src="/pages/Bank_App/img/bkg.jpg">
+<!-- Header & Navigation -->
+
+    <header>
+        <h1><a href="/pages/Bank_App/index.html">Enigma Banking</a></h1>
+        <nav>
+            <button class="default-button"><a href="../../index.html">CJAX.DEV PORTFOLIO</a></button>
+            <div id="drp-down-div-one">
+                <button id="drp-button-one"><a href="/pages/Bank_App/personal.html">Personal</a></button>
+                    <div id="drp-content-one">
+                        <a href="/pages/Bank_App/personal.html#checkings">Checkings</a>
+                        <a href="/pages/Bank_App/personal.html#savings">Savings</a>
+                        <a href="/pages/Bank_App/personal.html#loans">Personal Loans</a>
+                    </div>
+            </div>
+            <div id="drp-down-div-two">
+                <button id="drp-button-two"><a href="#">Small Business</a></button>
+                <div id="drp-content-two">
+                    <a href="#">Manage Account</a>
+                    <a href="#">Assets</a>
+                    <a href="#">Loans</a>
+                </div>
+            </div>
+            <button class="default-button"><a href="/pages/Bank_App/contact.html">About</a></button>
+            <button class="default-button"><a href="/pages/Bank_App/login.html">Login / Sign Up</a></button>
+        </nav>
+        <img class="header-logo" src="/pages/Bank_App/img/coin.svg">
+    </header>
+
+<!-- Banking Output -->
+
+    <div id="personal-banking-container">
+<!-- Account Heading -->
+
+        <div class="bank-box">
+        <h1>Enigma Banking</h1>
+        </div>
+<!-- Checkings Account -->
+
+        <div class="bank-box">
+            <h2 id="checkings">Checkings Account</h2>
+            <p class="checkings-heading">Primary Checkings Account</p>
+            <p>Account Number: <span id="c-acct-num"></span></p>
+            <p>Account Age: <span id="c-acct-age"></span></p>
+                <div class="trans-container">
+                    
+                        <div class="trans-content">
+                        <h4>Recent Transactions</h4>
+                            <div id="c-trans-content">
+                                <div class="c-recent-order-cont">
+                                    <span>Date</span>
+                                    <span>Category</span>
+                                    <span>Amount</span>
+                                    <span>Description</span>
+                                </div>
+                                <div class="c-recent-cont">
+                                    <span id="c-recent-date">3/12/24</span>
+                                    <span id="c-recent-cat">Technology</span>
+                                    <span id="c-recent-amt"><span id="tran-add-sub">-</span> 2.99</span>
+                                    <span id="c-recent-details">Google Inc.</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+                    <div class="balance-box">
+                    <span class="checkings-balance-box"></span>
+                    <span id="checkings-balance"></span>
+                    </div>
+                    <button>Transactions</button>
+        </div>
+<!-- Savings Account -->
+
+        <div class="bank-box">
+            <h2 id="savings">Savings Account</h2>
+            <p class="savings-heading">Primary Savings Account</p>
+            <p>Account Number: <span id="s-acct-num"></span></p>
+            <p>Account Age: <span id="s-acct-age"></span></p>
+                <div class="trans-container">
+                <button>Transactions</button>
+                    <div class="trans-content">
+                    <h4>Recent Transactions</h4>
+                        <div id="s-trans-content">
+                        </div>
+                    </div>
+                </div>
+                <div class="balance-box">
+                <span class="savings-balance-box">Balance: </span>
+                <span id="savings-balance"></span>
+                </div>
+        </div>
+<!-- Loan Account -->
+
+        <div class="bank-box">
+            <h2 id="loans">Loans</h2>
+            <p class="loans-heading">Primary Savings Account</p>
+            <p>Account Number: <span id="l-acct-num"></span></p>
+            <p>Account Age: <span id="l-acct-age"></span></p>
+                <div class="trans-container">
+                <button>Transactions</button>
+                <div class="trans-content">
+                <h4>Recent Transactions</h4>
+                    <div id="l-trans-content">
+                    </div>
+                </div>
+                    <div class="current-loans">
+                    <p class="loans-heading">Current Loans</p>
+                        <div class="balance-box">
+                        <span class="loans-balance-box">Available: </span>
+                        <span id="loans-avail"></span>
+                        <span class="payment-due">Payment Due: </span>
+                        <span id="loans-pay"></span>
+                        </div>
+                    </div>
+        </div>
+        
+
+        </div>
+<!-- Account Details -->
+
+        <div class="bank-box">
+        <p class="bank-box-info">Welcome to Your Account Details</p>
+        <button id="account-details-overall">Show Details</button>
+            <div id="details-container">
+                <div id="details-content">   
+                </div>
+            </div>
+        </div>
+<!-- Check to Access id snap and link to section when clicked in nav -->
+    </div>
+<!-- Footer -->
+    <footer>
+
+    </footer>
+<script src="/js/script.js" defer></script>  
+</body>
+</html>

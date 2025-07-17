@@ -1,0 +1,665 @@
+/* Universal */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Root */
+
+:root {
+    --main-clr: #ffd900;
+    --secondary-clr: rgb(0, 40, 255);
+    --third-clr: #0a3853;
+    --white-bkg: rgb(255, 255, 255);
+    --overlay-clr: rgba(64, 64, 64, .4);
+    --black-font: rgb(0, 0, 0);
+    --white-font: rgb(255, 255, 255);
+    --font-face: 'Titillium Web', sans-serif;
+    --positive-clr: rgb(40, 255, 0);
+    --negative-clr: rgb(255, 0, 40);
+    --light-shadow: rgba(255, 255, 255, .6);
+    --dark-shadow: rgba(0, 0, 0, .4);
+}
+/* HyperTextMarkUpLanguage */
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+    /* scroll snap align - start (on child) */
+}
+/* Content */
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(/img/tex.jpg);
+    background-size: contain;
+    font-family: var(--font-face);
+    position: relative;
+}
+
+.bkg {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 27%);
+    filter: brightness(50%);
+}
+/* Navigation */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--main-clr);
+    width: 100%;
+    height: 60px;
+    padding: .5em;
+    margin: 0;
+    box-shadow: 4px 0 8px var(--dark-shadow);
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: clamp(300px, 70%, 800px);
+    height: auto;
+    background: transparent;
+}
+
+header h1 a {
+    cursor: pointer;
+    color: var(--third-clr);
+    text-shadow: 2px 0 6px var(--light-shadow);
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--white-font);
+    display: inline-block;
+    margin: 0 1em;
+    font-weight: 600;
+    text-shadow: 2px 0 4px rgba(64, 64, 64, .4);
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+
+.default-button {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: fit-content;
+    height: auto;
+    color: var(--white-font);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-logo {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    top: .5em;
+    right: 0;
+}
+/* Personal Banking Drop Down Area Styling */
+
+#drp-down-div-one {
+    display: inline-block;
+    position: relative;
+}
+
+#drp-button-one {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: fit-content;
+    height: auto;
+    color: var(--white-font);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#drp-content-one {
+    display: none;
+}
+
+#drp-down-div-one:hover #drp-content-one {
+    display: block;
+    background-color: var(--main-clr);
+    position: absolute;
+    top: 25px;
+    left: -8px;
+    width: fit-content;
+    height: auto;
+    box-shadow: 0 2px 4px var(--dark-shadow);
+    overflow: hidden;
+}
+
+#drp-content-one a {
+    text-decoration: none;
+    padding: .5em .5em;
+    display: block;
+    color: white;
+    background-color: var(--main-clr);
+    transition: all 350ms ease-in-out;
+}
+#drp-content-one a:hover {
+    color: black;
+    scale: 110%;
+}
+/* Small Business Drop Down Area Styling */
+
+#drp-down-div-two {
+    display: inline-block;
+    position: relative;
+}
+
+#drp-button-two {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: fit-content;
+    height: auto;
+    color: var(--white-font);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+#drp-content-two {
+    display: none;
+}
+
+#drp-down-div-two:hover #drp-content-two {
+    display: block;
+    background-color: var(--main-clr);
+    position: absolute;
+    top: 25px;
+    left: -8px;
+    width: fit-content;
+    height: auto;
+    box-shadow: 0 8px 14px var(--dark-shadow);
+    overflow: hidden;
+}
+
+#drp-content-two a {
+    text-decoration: none;
+    padding: .5em .5em;
+    display: block;
+    color: white;
+    background-color: var(--main-clr);
+    transition: all 750ms ease-in-out;
+}
+#drp-content-two a:hover {
+    color: black;
+    scale: 110%;
+}
+/* Crypto Logo  */
+
+.header-logo {
+    width: 200px;
+    height: auto;
+}
+/* Main Area */
+
+.feat-img {
+    width: 400px;
+    height: auto;
+    float: right;
+    margin-right: 2em;
+    margin-top: 2em;
+    box-shadow: -4px 2px 8px var(--dark-shadow);
+    border-right: solid black 4px;
+}
+/* Important Text */
+
+.highlight {
+    color: var(--secondary-clr);
+}
+/* Main Container */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    width: 50%;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: 1.5em;
+    margin: 1em;
+    background-color: var(--main-clr);
+    box-shadow: -4px 2px 8px var(--dark-shadow);
+}
+/* Section One */
+
+.enigma-container-one {
+    position: relative;
+    max-width: 400px;
+    margin: 1em 0 1.25em;
+}
+
+.enigma-container-one h2 {
+    margin-bottom: .25em;
+    color: var(--third-clr);
+    text-shadow: 2px 0 4px var(--light-shadow);
+}
+
+.enigma-container-one h3 {
+    margin-bottom: 1em;
+    text-decoration: underline;
+    color: var(--third-clr);
+    text-shadow: 2px 0 4px var(--light-shadow);
+}
+/* Section Two */
+
+.enigma-container-two {
+    position: relative;
+    max-width: 400px;
+}
+
+.enigma-container-two h3 {
+    margin-bottom: .25em;
+    color: var(--third-clr);
+    text-shadow: 2px 0 4px var(--light-shadow);
+}
+
+.enigma-container-two h4 {
+    margin-bottom: 1em;
+    text-decoration: underline;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    text-shadow: 2px 0 4px var(--light-shadow);
+}
+
+.enigma-container-two h6 {
+    margin-bottom: .25em;
+    color: var(--third-clr);
+    text-shadow: 2px 0 4px var(--light-shadow);
+}
+/* Forum Area Styles */
+
+.forum-link {
+    text-decoration: underline;
+    color: black;
+}
+
+.forum-link:active {
+    color:white;
+}
+
+.forum-link:visited {
+    color: var(--third-clr);
+}
+
+.forum-link:hover {
+    color: rgba(64, 64, 64, .4);
+}
+/* Section Three */
+
+.enigma-container-three {
+
+}  
+/* Personal Page */
+
+#personal-banking-container {
+    text-align: center;
+    background-color: var(--third-clr);
+    padding: 2em;
+    width: 50%;
+    height: 100%;
+    margin: 2em auto;
+    border-radius: 10px;
+}
+
+.bank-box {
+    margin-top: 1em;
+    padding: 3em;
+    color: white;
+    background-color: var(--third-clr);
+    border-bottom: solid white 3px;
+}
+
+.bank-box button {
+    padding: .5em 1em;
+    margin-bottom: 1em;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--secondary-clr);
+    cursor: pointer;
+    transition: 700ms all ease-in-out;
+}
+
+.bank-box button:hover {
+    padding: .5em 1em;
+    margin-bottom: 1em;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 40, 255, 0.7);
+    cursor: pointer;
+}
+
+.bank-box h1 {
+    color: white;
+    text-shadow: 0 0 8px var(--light-shadow);
+}
+
+.bank-box h2 {
+    color: var(--main-clr);
+}
+
+.bank-box p:not(.bank-box-info) {
+    text-align: left;
+}
+.bank-box p:nth-child(4) {
+    margin-bottom: 1.5em;
+}
+
+.savings-heading {
+    text-decoration: underline;
+}
+
+.checkings-heading {
+    text-decoration: underline;
+}
+.loans-heading {
+    text-decoration: underline;
+}
+.balance-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    color: white;
+    margin: 1em auto;
+    padding: .5em 1em;
+    font-weight: bold;
+}
+
+/* Bank Box Info */
+
+#account-details-overall {
+    text-align: center;
+}
+
+#details-container {
+    text-align: center;
+}
+
+#details-content {
+
+}
+.bank-box-info {
+    text-align: center;
+    margin: 1em 0;
+    font-size: 1.25em;
+    text-decoration: underline;
+}
+/* Checkings Account Container */
+.c-trans-content {
+
+}
+.c-recent-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.c-recent-order-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: underline;
+}
+.c-recent-order-cont > span {
+    font-weight: 800;
+    font-size: .75rem;
+    margin-right: .5rem;
+}
+.c-recent-cont > span {
+    font-size: .75rem;
+    display: inline-block;
+    margin-right: .5rem;
+    color: #ffd900;
+}
+/* Login & Sign Up Container Styles */
+
+.gen-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    background-color: var(--third-clr);
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.loginBox {
+width: 3em;
+height: 15em;
+background-color: var(--main-clr);
+content: "";
+position: relative;
+}
+.loginBox:nth-child(2) {
+    width: 3em;
+height: 17em;
+background-color: var(--main-clr);
+content: "";
+position: relative;
+}
+.loginContent {
+width: 7em;
+height: 30.5em;
+background-color: white;
+transform: rotate(66deg);
+content: "";
+position: absolute;
+top: 50%;
+right: 50%;
+left: 50%;
+bottom: 50%;
+}
+.loginContent:nth-last-child() {
+position: absolute;
+top: 50%;
+right: 20%;
+left: 50%;
+bottom: 50%;
+}
+.loginContent:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    left: 50%;
+    bottom: 50%;
+    }
+.promise-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+.promise-heading {
+    color: var(--third-clr);
+    font-size: 2.4em;
+    font-weight: bolder;
+    z-index: 3;
+}
+.promise-cont h1 {
+    z-index: 3;
+    color: var(--third-clr);
+}
+.tsuyoi {
+    color: var(--main-clr);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1em;
+}
+.login-portal {
+    text-decoration: none;
+    color: var(--third-clr);
+}
+.bodybody {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+form {
+    text-align: center;
+}
+#login-form-container {
+    background-color: var(--third-clr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    width: 50%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 2em;
+}
+#forgotpass {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--third-clr);
+    border-radius: 0 0 10px 10px;
+    padding: .25em;
+}
+#forgotpass a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: white;
+    
+}
+#submit-button {
+    border: solid white 1px;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: .15em .5em;
+    margin: 10px auto;
+    background-color: white;
+    text-align: center;
+}
+.signup-container {
+    background-color: var(--third-clr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    width: 50%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.signup-container h2 {
+    margin: 1em auto 1em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.signup-container p {
+    margin-bottom: 1em;
+    color: rgb(255, 255, 255);
+}
+.signup-container input, .signup-container label {
+    color: rgb(255, 255, 255);
+}
+.signup-container input::placeholder {
+    padding: .25em;
+}
+.account-credentials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.personal-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#header-account-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8%;
+    position: relative;
+    z-index: 8;
+}
+
+#account-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    transition: all 800ms ease-in-out;
+
+}
+#account-image:hover {
+    transform: rotate(360deg);
+}
+
+#account-name {
+    font-size: .75em;
+    color: black;
+    font-weight: bold;
+    text-shadow: 4px 0 8px rgba(0, 0, 0, .4);
+}
+
+#account-name-mod {
+    font-size: .9em;
+    color: var(--third-clr);
+    text-shadow: 4px 0 8px rgba(0, 0, 0, .4); 
+    transition: all 700ms ease-in-out;
+}
+
+#account-name-mod:hover {
+    font-size: .9em;
+    color: var(--third-clr);
+    text-shadow: 4px 0 8px rgba(0, 0, 0, .4); 
+    position: absolute;
+    bottom: 20px;
+}
+#email, #username, #user-pass, #firstname, #lastname, #ssn, #corp {
+    color: black;
+}
+

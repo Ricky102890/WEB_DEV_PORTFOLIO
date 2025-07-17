@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/pages/Bank_App/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <!-- Browser -->
+    <title>Enigma Banking</title>
+    <link rel="icon" type="x-icon/image" href="#">
+    <!-- JS -->
+    <script src="/pages/Bank_App/js/script.js" defer></script>  
+</head>
+<body>
+    <img class="bkg" src="/pages/Bank_App/img/bkg.jpg">
+<!-- Header & Navigation -->
+
+    <header>
+        <h1><a href="/pages/Bank_App/index.html">Enigma Banking</a></h1>
+        <nav>
+            <button class="default-button"><a href="../../index.html">CJAX.DEV PORTFOLIO</a></button>
+            <div id="drp-down-div-one">
+                <button id="drp-button-one"><a href="/pages/Bank_App/personal.html">Personal</a></button>
+                    <div id="drp-content-one">
+                        <a href="/pages/Bank_App/personal.html#checkings">Checkings</a>
+                        <a href="/pages/Bank_App/personal.html#savings">Savings</a>
+                        <a href="/pages/Bank_App/personal.html#loans">Personal Loans</a>
+                    </div>
+            </div>
+            <div id="drp-down-div-two">
+                <button id="drp-button-two"><a href="#">Small Business</a></button>
+                <div id="drp-content-two">
+                    <a href="#">Manage Account</a>
+                    <a href="#">Assets</a>
+                    <a href="#">Loans</a>
+                </div>
+            </div>
+            <button class="default-button"><a href="/pages/Bank_App/contact.html">About</a></button>
+            <button class="default-button"><a href="/pages/Bank_App/login.html">Login / Sign Up</a></button>
+        </nav>
+        <img class="header-logo" src="/pages/Bank_App/img/coin.svg">
+    </header>
+<!-- Login Sign Up Area -->
+    <div class="bodybody">
+    <div id="login-form-container">
+        <form>
+        <input type="text" id="username" placeholder="Username" required>
+        <br>
+        <input type="password" id="password" placeholder="******" required>
+        <br>
+        <button id="submit-button">Submit</button>
+        </form>
+        <div id="forgotpass">
+            <a href="#">Forgot Username</a><a href="#">Forgot Password</a>
+            <br>
+            <a href="#" id="#login-trans">Sign Up</a>
+        </div>
+    </div>
+    <div class="gen-container">
+
+        <div class="loginBox">
+            <div class="loginContent"></div>
+        </div>
+        <div class="loginBox">
+        <div class="loginContent"></div> 
+        </div>
+        <div class="loginBox">
+        <div class="loginContent"></div>
+        </div>
+        <div class="loginBox">
+        <div class="loginContent"></div>
+        </div>
+        <div class="loginBox">
+        <div class="loginContent"></div>
+        </div>
+        <div class="loginBox">
+        <div class="loginContent"></div>
+        </div>
+        <div class="loginBox">
+        <div class="loginContent"></div>
+        </div>
+        <div class="loginBox">
+        <div class="loginContent"></div>
+        </div>
+    </div>
+    <div class="promise-cont">
+        <h1 class="promise-heading">Access, Granted Only To You.</h1>
+        <h1>The only way to secure your assets, is with our <span class="tsuyoi">"premium digital security services" -</span><a href="#login-trans" class="login-portal">  Join Now</a></h1>
+    </div>
+    </div>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form id="form-signup">
+            <p>Enter your sign-in credentials below</p>
+            <div class="account-credentials">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Email" required>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" min="8" max="18" required>
+            <label for="user-pass">Password</label>
+            <input type="password" id="user-pass" placeholder="******" min="8" max="18" required>
+            </div>
+            <div class="personal-details">
+            <p>Enter your account's personal details below</p>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" placeholder="First Name" required>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" placeholder="Last Name" required>
+            <label for="ssn">Last 4 Digits SSN</label>
+            <input type="password" id="ssn" placeholder="******" required>
+            <label for="corp">Orginazation</label>
+            <input type="text" id="corp">
+            </div>
+            <button form="form-signup" id="submit-form-button" type="button">Submit</button>
+        </form>
+            <h2>We look forward to doing profitable bussines with you!</h2>
+    </div>
+<!-- Footer -->
+
+    <footer>
+
+    </footer>
+<script src="/js/script.js"></script>  
+</body>
+</html>
