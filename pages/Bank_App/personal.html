@@ -13,6 +13,7 @@
     <title>Enigma Banking</title>
     <link rel="icon" type="x-icon/image" href="#">
     <!-- JS -->
+    <script src="https://kit.fontawesome.com/fbc7a53662.js" crossorigin="anonymous"></script>
     <script src="/pages/Bank_App/js/script.js" defer></script>  
 </head>
 <body>
@@ -21,7 +22,8 @@
 
     <header>
         <h1><a href="/pages/Bank_App/index.html">Enigma Banking</a></h1>
-        <nav>
+        <button id="ham_btn" aria-expanded="false" aria-controls="navbar"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
+        <nav id="navbar">
             <button class="default-button"><a href="../../index.html">CJAX.DEV PORTFOLIO</a></button>
             <div id="drp-down-div-one">
                 <button id="drp-button-one"><a href="/pages/Bank_App/personal.html">Personal</a></button>
@@ -42,6 +44,7 @@
             <button class="default-button"><a href="/pages/Bank_App/contact.html">About</a></button>
             <button class="default-button"><a href="/pages/Bank_App/login.html">Login / Sign Up</a></button>
         </nav>
+        <button id="close_nav_icon"><i class="fa-solid fa-circle-xmark fa-shake" style="color: #ffffff;"></i></button>
     </header>
 
 <!-- Banking Output -->
