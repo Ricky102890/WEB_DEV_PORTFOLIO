@@ -7,14 +7,19 @@
     font-family: '##';
     src: url();
 }
+
 /* Root */
 :root {
     --spinClr: linear-gradient(to right, purple, white, black);
 }
+
+/* Body */
 body {
     width: 100%;
     position: relative;
 }
+
+/* Header */
 header {
         width: 100%;
         height: auto;
@@ -22,6 +27,7 @@ header {
         z-index: 15;
 }
 
+/* Navigation */
 nav {
     width: 100%;
     height: auto;
@@ -46,6 +52,8 @@ nav {
     /* border: 2px solid red; */
     transition: all 400ms ease-in-out;
 }
+
+/* Navigation Bar */
 .navbar {
     display: flex;
     align-items: center;
@@ -67,6 +75,9 @@ nav {
     color: rgb(255, 187, 0);
     letter-spacing: .5rem;
 }
+
+/* Responsive Hamburger Icon / Responsive Bars Icon */
+/* will not show, unless viewport is under  847px */
 .nav_icon_open {
     display: none;
     width: 32px;
@@ -113,7 +124,9 @@ nav {
     cursor: pointer;
     transition: all 700ms ease-in-out;
 }
-.nav_links {
+
+/*? Do i need this */
+/* .nav_links {
     display: flex;
     flex-direction: column;
     align-items:flex-start;
@@ -144,12 +157,16 @@ nav {
 .nav_links.show  a:hover {
     transform: scale(120%);
     color: #561b19;
-}
+} */
+
+/* Responsive Container */
 .responsive {
     width: 100%;
     height: auto;
     margin: 0 auto;
 }
+
+/* Test - Title Header, Author */
 .test {
     width: 100%;
     height: auto;
@@ -172,6 +189,8 @@ nav {
     width: 100%;
     text-align: center;
 }
+
+/* Hero Section */
 /* breaks at 1140px */
 .hero {
     width: 100%;
@@ -193,14 +212,32 @@ nav {
     z-index: 1;
     /* border: 1px solid red; */
 }
-@keyframes heroSlide {
+
+/* Hero Slide Animation - DISCONTINUED */
+/* @keyframes heroSlide {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
     }
+} */
+
+/* Hero Header */
+.hero_intro {
+
 }
+.hero_title {
+
+}
+.hero_title h1 {
+
+}
+.hero_title span {
+
+}
+
+/* Hero Content */
 .hero_feat {
     width: 100%;
     height: auto;
@@ -222,17 +259,23 @@ nav {
 .hero_feat_title span {
     font-size: .6rem;
 }
-.hero_feat_thumb {
+
+/* ? */
+/* .hero_feat_thumb {
     margin: 2rem auto 2rem;
     display: flex;
     gap: 1rem;
-    /* border: 2px solid green; */
-}
+    border: 2px solid green;
+} */
+
+/* Default Image Container */
 .img_scaler {
     width: 320px;
     height: 320px;
     transition: all 700ms ease-in-out;
 }
+
+/*? WHY */
 .img_scaler:hover img {
     filter: grayscale(0%);
 } 
@@ -243,6 +286,8 @@ nav {
     filter: grayscale(100%);
     transition: all 700ms ease-in-out;
 }
+
+/* Hero - Nested Content */
 .hero_feat_sum {
     max-width: 320px;
     padding: 1rem;
@@ -264,6 +309,7 @@ nav {
     opacity: 0;
     transition: all 700ms ease-in-out;
 }
+/* Expands Featured Project Details - Expands Hero Details*/
 #feat_one {
     display: none;
     opacity: 0;
@@ -313,9 +359,12 @@ nav {
     color: rgb(255, 187, 0);
     text-decoration: underline;
 }
+/* Featured Project Section - Hidden Details */
 .hero_details {
     display: none;
 }
+/* Projects */
+/* Projects Webpage - projects.html */
 .projects_menu {
     width: 100%;
     height: auto;
@@ -351,7 +400,9 @@ nav {
     color: black;
     text-decoration: underline;
 }
-/* ABOUT US PAGE */
+
+/* About Us */
+/* About Us Webpage - about.html*/
 .about_us {
     width: 100%;
     height: auto;
@@ -392,12 +443,13 @@ nav {
     font-size: 12px;
     font-family: sans-serif;
 }
+
+/* CJAXDEV Portfolio Homepage */
 /* HOMEPAGE ABOUT SECTION */
 .sec_one {
     width: 100%;
     margin: 0 auto;
 }
-
 .about {
     width: 100%;
     padding: 2rem;
@@ -519,7 +571,9 @@ nav {
     top: 0;
     left: 0;
 }
+
 /* Section Two */
+/* Widgets Section - *contains temp widget */
 .sec_two {
     width: 100%;
     height: auto;
@@ -589,6 +643,8 @@ nav {
 .blast_state {
     animation: blastLetters 1s forwards infinite;
 }
+/* Widgets Section Animation(s) */
+/*! DEL */
 @keyframes blastLetters {
   0% {
     transform: scale(2);
@@ -603,7 +659,10 @@ nav {
     opacity: 1;
   }
 }
+
+/* Small Tablets and Mobile Viewports */
 @media (max-width: 847px) {
+    /* Header */
     header {
         width: 100%;
         height: auto;
@@ -611,6 +670,7 @@ nav {
         top: 0;
         z-index: 15;
     }
+    /* Navigation */
     nav {
         width: 100%;
         height: auto;
