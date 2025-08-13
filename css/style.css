@@ -259,7 +259,6 @@ nav {
 .hero_feat_title span {
     font-size: .6rem;
 }
-
 /* ? */
 /* .hero_feat_thumb {
     margin: 2rem auto 2rem;
@@ -291,9 +290,13 @@ nav {
 .hero_feat_sum {
     max-width: 320px;
     padding: 1rem;
+    font-family: sans-serif;
     flex-direction: column;
     gap: 1rem;
     transition: all 700ms ease-in-out;
+}
+.hero_feat_sum span {
+    display: block;
 }
 .hero_feat_sum p {
     font-size: .75rem;
@@ -442,6 +445,7 @@ nav {
     margin: 1rem 0;
     font-size: 12px;
     font-family: sans-serif;
+    letter-spacing: .3rem;
 }
 
 /* CJAXDEV Portfolio Homepage */
@@ -465,6 +469,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
     gap: 2rem;
     /* border: 1px solid red; */
 }
@@ -533,8 +538,12 @@ nav {
 }   
 .about_author_story p {
     width: 100%;
-    line-height: 1.5rem;
+    text-align: right;
+    line-height: 2rem;
+    letter-spacing: .2rem;
+    font-family: sans-serif;
 }
+
 .about_author_connect {
     display: flex;
     flex-wrap: wrap;
