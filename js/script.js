@@ -69,3 +69,4 @@ function blastLetter() {
     });
 }
 blastLetter();
+console.log('Hello');
