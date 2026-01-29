@@ -1,0 +1,59 @@
+/* IMPORTS */
+
+/* UNIVERSAL */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* FONTS */
+@font-face {
+    font-family: 'Poke';
+    src: url(/pages/Pokemon/ASSETS/FONTS/Pokemon\ Solid.ttf);
+}
+@font-face {
+    font-family: ;
+    src: url();
+}
+/* ROOT */
+:root {
+    
+}
+/* HTML */
+html {
+    scroll-behavior: smooth;
+}
+/* BODY */
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* CHANGE BACKGROUND */
+    background: transparent;
+    position: relative;
+}
+/* ELEMENT/NODES */
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    /* CHANGE COLOR */
+    color: gray;
+}
+a:visited {
+    color: ;
+}
+a:active {
+    color: ;
+}
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

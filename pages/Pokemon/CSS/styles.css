@@ -1,0 +1,205 @@
+/* SYTLES ROOT */
+:root {
+    /* BASIC */
+    --viewport_desktop_padding: 24px;
+    --viewport_tablet_padding: 20px;
+    --viewport_mobile_padding: 14px;
+    --font_family_heading: 'Poke', sans-serif;
+    --font_family_paragraph: ;
+    --text_pop_clr_1: ;
+    --text_pop_clr_2: ;
+    --text_pop_clr_3: ;
+    --link_clr_main: ;
+    --link_clr_hover: ;
+    --link_clr_active: ;
+    --link_font: ;
+    --link_font_weight: ;
+    --button_padding_lrg: ;
+    --button_padding_reg: ;
+    --button_padding_sm: ;
+    --paragraph_line_height_heading: ;
+    --paragraph_line_height_text: ;
+    --paragraph_indent: ;
+    --paragraph_spacing: ;
+    --heading_spacing: ;
+    --heading_size_lrg: ;
+    --heading_size_standard: ;
+    --heading_size_sm: ;
+    /* THEMES */
+    --primary_clr: #2c6fa6;
+    --secondary_clr: ;
+    --accent_clr: ;
+    --font_clr_light: ;
+    --font_clr_lighter: ;
+    --font_clr_dark: ;
+    --font_clr_darker: ;
+    --theme_gengar: #423056;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    background: var(--primary_clr);
+}
+header {
+    width: 100%;
+    height: auto;
+    max-height: 0px;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    /* border: 2px solid blue; */
+}
+header nav .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar .nav_item {
+    width: 100%;
+    font-family: monospace;
+    display: inline-block;
+    margin: 0 2rem;
+    /* border: 2px solid green; */
+    position: relative;
+    transition: all 700ms ease-in-out;
+}
+.nav_item a {
+    font-size: 1rem;
+    color: white;
+    letter-spacing: .4rem;
+    transition: all 400ms ease-in-out;
+}
+.nav_item .sub_menu {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0 .5rem;
+    background: rgba(255, 255, 255, .9);
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    gap: .2rem;
+    z-index: 99;
+}
+.sub_menu .section {
+    width: 100%;
+    height: auto;
+    padding-left: .4rem;
+}
+.section button {
+    display: block;
+    font-size: .6rem;
+    color: black;
+    text-align: left;
+    letter-spacing: .4rem;
+    padding: 8px 0;
+    outline: none;
+    border: none;
+    background: transparent;
+    transition: all 400ms ease-in-out;
+}
+.section button:hover {
+    color: var(--theme_gengar);
+    font-weight: 900;
+}
+.hero {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    position: relative;
+    /* border: 2px solid red; */
+}
+.hero_header {
+    width: 100%;
+    min-height: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(/pages/Pokemon/MEDIA/BACKGROUNDS/gengar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    box-shadow: 1px 3px 99px white;
+}
+.hero_header h1 {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    font-size: 4rem;
+    text-align: center;
+    font-family: var(--font_family_heading);
+    color: white;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, .9);
+    letter-spacing: .6rem;
+    /* border: 2px solid orange; */
+}
+.hero_header .details {
+    display: none;
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    border-radius: 2px;
+    font-family: monospace;
+    background: #2A7B9B;
+    background: radial-gradient(circle, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 31%, rgba(237, 137, 83, 1) 100%);
+}
+main {
+    width: 100%;
+    height: auto;
+}
+main section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: monospace;
+    color: white;
+    letter-spacing: .6rem;
+    background: radial-gradient(at 25% 80%, #424153 0px, transparent 50%), radial-gradient(at 46% 70%, #fdadc7 0px, transparent 50%), radial-gradient(at 73% 57%, #ea4c88 0px, transparent 50%), radial-gradient(at 28% 41%, #993399 0px, transparent 50%), #424153;
+    
+}
+section h2 {
+    font-size: 2rem;
+    font-family: 'Poke', sans-serif;
+    letter-spacing: .75rem;
+    margin: 2rem 0;
+}
+section p {
+    font-size: 1.25rem;
+    text-align: center;
+}
+section ul {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+}
+section ul li {
+    display: flex;
+    flex-direction: column;
+}
+.custom_section_media {
+
+}
+.featured {
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 3px 99px white;
+}
+.featured video {
+    width: 100%;
+    object-fit: cover;
+}
