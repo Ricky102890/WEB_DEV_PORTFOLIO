@@ -245,6 +245,7 @@ nav {
     padding: .5rem;
     display: flex;
     align-items: center;
+    justify-content: end;
     gap: 2rem;
     /* border: 2px solid red; */
 }
