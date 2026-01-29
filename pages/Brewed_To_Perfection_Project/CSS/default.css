@@ -1,15 +1,15 @@
 /* Fonts & Imports */
 @font-face {
 font-family: 'CLatte';
-src: url(/ASSETS/Fonts/Coffee\ Latte.ttf);
+src: url(/pages/Brewed_To_Perfection_Project/ASSETS/Fonts/Coffee\ Latte.ttf);
 }
 @font-face {
     font-family: 'Afternoon';
-    src: url(/ASSETS/Fonts/Afternoon-Coffee-free.ttf);
+    src: url(/pages/Brewed_To_Perfection_Project/ASSETS/Fonts/Afternoon-Coffee-free.ttf);
 }
 @font-face {
     font-family: 'Sweet Coffee';
-    src: url(/ASSETS/Fonts/Sweet\ Iced\ Coffee.ttf);
+    src: url(/pages/Brewed_To_Perfection_Project/ASSETS/Fonts/Sweet\ Iced\ Coffee.ttf);
 }
 /* Universal */
 *, *::before, *::after {
