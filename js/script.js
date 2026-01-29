@@ -55,7 +55,24 @@ function showFeatOne() {
         
     });
 }
+
+function showFeatTwo() {
+    const showMoreBtn = document.getElementById('show_feat_two');
+    const featOneDetails = document.getElementById('feat_two');
+    showMoreBtn.addEventListener("click", () => {
+        if (featOneDetails.classList.contains('show')) {
+            featOneDetails.classList.remove('show');
+            showMoreBtn.innerHTML = 'SHOW MORE'
+        }
+        else {
+            featOneDetails.classList.add('show');
+            showMoreBtn.innerHTML = 'SHOW LESS'
+        }
+        
+    });
+}
 showFeatOne();
+showFeatTwo();
 
 function blastLetter() {
     const letterInput = document.getElementById('word_x');
