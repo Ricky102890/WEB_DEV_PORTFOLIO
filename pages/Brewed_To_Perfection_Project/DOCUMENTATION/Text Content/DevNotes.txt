@@ -1,0 +1,41 @@
+BTP Edits / To do List
+
+
+Edit the layout and style of Customize Experience Sub Nav
+Create Border radius curve on one of four edges - heading in each section need this
+Brands we support need the brand icon - find brand icon and put brands in a div with image wrapper with margins, can be positioned below name
+Change the images in each section - Border radius effect looks tacky, research how images are used in sections
+Section paragraph content is overwhelming - consolidate content or space it with a cool modern clean layout
+Make the paragraphs in the sections a grid so content can flow more clean and smooth - think of a newspaper 
+Rename theme modes to morning coffee and night cafe
+
+Create shadow div for coffee quiz - start by creating what the quiz will look like and leave it for function later
+Quiz will need a result shadow div also - when creating quiz shadow div, add another shadow div to display results
+
+Create Shadow div for promotional timer and have it float on a fixed part of page
+
+*Maybe have aria controls also floating as a div
+
+*With floating divs make sure it contains a close button
+
+Create a testimonial sections and look at some sample before executing - reference some other projects or websites with cool testimonials 
+
+Create a hamburger/coffee icon for when the viewport is smaller than a large tablet - used aria expanded and controls and start media query section on media.css file
+
+Create a menu.html file to have menu in a black and white to go style with prices etc.
+
+Create a menu div on homepage with a brief list of the menu and link to full menu - included pictures and prices on homepage version
+
+Create loyalty points tracker div on homepage - will have brief points tracker in navigation, make space for it with dynamic design/layout
+
+
+Start Drafting Coffee Quiz formula to determine what cups of coffee are best for who
+
+Create a profile.html with a person's profile and ability to edit - just add the button for edits not doing JS as of yet
+
+Create a BTP logo and make sure it has different uses/formats/styles including logo and name, name only, and logo only
+
+Start adding content to footer and social link that go directly to the main social site for now (this is a draft)
+
+
+REMEMBER YOU CAN USE THIS AS A PORTFOLIO PIECE EVEN IF YOU DO NOT COMPLETE ON TIME OR IF YOU WIN OR NOT!!!!!!!!!!!!!!!!!!!!!

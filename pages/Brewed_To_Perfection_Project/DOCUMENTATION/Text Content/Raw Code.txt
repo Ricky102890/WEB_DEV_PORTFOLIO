@@ -1,0 +1,295 @@
+Raw Code
+
+HTML
+
+<div class="coffee-menu">
+                <div class="coffee-menu-header">
+                    <h2>Brewed To Perfection</h2>
+                    <h3>Menu</h3>
+                    <div class="img-wrapper">
+                        <img src="/MEDIA/Icons/Coffee-Icon-Gold.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <div class="menu-title">
+                        <h2>Coffee / Tea</h2>
+                    </div>
+                    <div class="menu-sizes">
+                        <h4>Small - 16oz</h4>
+                        <h4>Large - 20oz</h4>
+                    </div>
+
+                    <div class="menu-section">
+
+                        <div class="menu-col">
+
+                            <div class="menu-item">
+                                <h4>Organic House Blend</h4>
+                                <div class="price">
+                                    <span>2.00</span>
+                                    <span>2.50</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>Cafe au lait</h4>
+                                <div class="price">
+                                    <span>2.25</span>
+                                    <span>2.75</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>Pour Over</h4>
+                                <div class="price">
+                                    <span>4.00</span>
+                                    <span>4.50</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>Espresso Double</h4>
+                                <div class="price">
+                                    <span>2.00</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>Red Eye</h4>
+                                <div class="price">
+                                    <span>4.00</span>
+                                    <span>4.50</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>Americano</h4>
+                                <div class="price">
+                                    <span>3.50</span>
+                                    <span>4.00</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>Cappuccino</h4>
+                                <div class="price">
+                                    <span>4.50</span>
+                                    <span>5.00</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>Latte</h4>
+                                <div class="price">
+                                    <span>4.50</span>
+                                    <span>5.00</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>Mocha Latte</h4>
+                                <div class="price">
+                                    <span>4.75</span>
+                                    <span>5.25</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>Cortado</h4>
+                                <div class="price">
+                                    <span>3.50</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>Hot Tea</h4>
+                                <div class="price">
+                                    <span>2.50</span>
+                                    <span>3.00</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>London Fog</h4>
+                                <div class="price">
+                                    <span>3.50</span>
+                                    <span>4.00</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Matcha Latte</h4>
+                                <div class="price">
+                                    <span>4.50</span>
+                                    <span>5.00</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>Chai Latte</h4>
+                                <div class="price">
+                                    <span>4.50</span>
+                                    <span>5.00</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>Tumeric Latte</h4>
+                                <div class="price">
+                                    <span>4.50</span>
+                                    <span>5.00</span>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <h4>Hot Chocolate</h4>
+                                <div class="price">
+                                    <span>3.50</span>
+                                    <span>4.00</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+CSS
+
+
+.coffee-menu {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0 1rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    align-items: center;
+    background: url(/MEDIA/Images/Coffee-Menu-One.jpg);
+    color: #B45F06;
+}
+.menu-title {
+    width: fit-content;
+    margin: .5rem auto .5rem;
+    display: block;
+    padding: 1rem 2rem;
+    background: linear-gradient(to bottom, var(--clr_RustGold) 0%, var(--clr_RustGold) 80%, transparent 100%); 
+}
+.menu-title h2 {
+    font-size: 3rem;
+    font-family: 'CBean', sans-serif;
+    text-shadow: 0px 2px 2px rgba(255, 255, 255, .9);
+    text-align: center;
+    letter-spacing: .4rem;
+}
+.coffee-menu-header {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / all;
+    text-align: center;
+    justify-self: center;
+}
+.coffee-menu-header .img-wrapper img {
+    width: 132px;
+    height: auto;
+}
+.coffee-menu-header h2, .coffee-menu-header h3 {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding: var(--button_large_padding);
+    background: var(--clr_Rust);
+    color: var(--clr_white);
+    font-size: 4rem;
+    font-weight: 200;
+    font-family: 'Monday Coffee', sans-serif;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    letter-spacing: .5rem;
+}
+.menu {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    align-items: center;
+    color: #B45F06;
+}
+.menu-sizes {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    grid-column: 1 / all;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    margin-bottom: 2rem;
+    font-family: 'CBean', sans-serif;
+    letter-spacing: .4rem;
+    background: rgba(255, 255, 255, .9);
+}
+.menu-sizes h4 {
+    margin-right: 2rem;
+    font-size: 1.25rem;
+    font-family: 'CBean', sans-serif;
+}
+/* Menu Columns  */
+.menu-col {
+    width: 100%;
+    margin: 0;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background: rgba(255, 255, 255, .9);
+    border-radius: 10px;
+}
+/* Menu Item */
+/* Menu Item Container */
+.menu-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+/* Menu Item Styles */
+.menu-item h4, .menu-item .price {
+    font-size: 1.5rem;
+    font-family: 'CBean', sans-serif;
+    letter-spacing: .4rem;
+    text-shadow: 0 1px 2px var(--clr_Shadow_Alpha);
+}
+/* Inner Menu - Item Name & Prices */
+
+/* Item Name */
+.menu-item h4 {
+    width: 100%;
+    margin-bottom: .5rem;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+}
+/* Price Options Wrappers */
+.menu-item .price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* Price Option (each) */
+.menu-item .price span {
+    margin: 0 2rem;
+    display: inline-block;
+    text-align: center;
+}

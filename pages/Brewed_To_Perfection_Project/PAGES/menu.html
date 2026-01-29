@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser Title -->
+    <title>Brewed To Perfection</title>
+    <!-- Browser Icon -->
+    <link rel="icon" type="image/x-icon" href="/MEDIA/Icons/#">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/default.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/media.css">
+    <!-- JavaScript -->
+    <script src="/JS/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="overlay-filter"></div>
+
+        <!-- <div class="header-heading">
+            <h1>Brewed To Perfection</h1> 
+        </div> -->
+    </header>
+    <nav>
+        <div class="img-wrapper"><img src="/MEDIA/Icons/BTP Logo One.png" alt="BTP Logo"></div>
+        <ul class="navbar">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link">HOME</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="menu.html" class="nav-link">MENU</a>
+            </li>
+
+            <li class="nav-item" id="btpPlusWrapper">
+                <a href="plus.html" class="nav-link">BTP+</a>
+                <div class="nav-btp-wrapper">
+
+                    <div class="nav-pkg">
+                        <a href="quiz.html#quizAnchor">Coffee Quiz</a>
+                        <span class="img-wrapper"><img src="/MEDIA/Icons/List-Gold.svg" alt="Gold Coin"></span>
+                        <span>Learn about your Coffee Palate</span>
+                    </div>
+
+                    <div class="nav-pkg">
+                        <a href="plus.html#rewardsAnchor">BTP+ Rewards</a>
+                        <span class="img-wrapper"><img src="/MEDIA/Icons/List-Gold.svg" alt="Gold Coin"></span>
+                        <span>Use Loyalty points to earn rewards</span>
+                    </div>
+
+                    <div class="nav-pkg">
+                        <a href="promo.html">Promotions</a>
+                        <span class="img-wrapper"><img src="/MEDIA/Icons/List-Gold.svg" alt="Gold Coin"></span>
+                        <span>Check out our *Monthly Promotions</span>
+                    </div>
+
+                    <div class="nav-pkg">
+                        <a href="plus.html#loayltyAnchor">Loyalty Points</a>
+                        <span class="img-wrapper"><img src="/MEDIA/Icons/List-Gold.svg" alt="Gold Coin"></span>
+                        <span>Check out our *Monthly Promotions</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="/index.html#aboutBtp" class="nav-link">ABOUT BTP</a>
+            </li>
+
+            <li class="nav-item" id="contactWrapper">
+                <a href="contact.html" class="nav-link">CONTACT</a>
+                <div class="sub-nav" id="contactMenu">
+                    <div class="contact-link">
+                        <a href="/index.html#footerAnchor">Follow Us</a>
+                        <span class="img-wrapper"><img src="/MEDIA/Icons/List-Gold.svg" alt="Gold Coin"></span>
+                    </div>
+                    <div class="contact-link">
+                        <a href="contact.html#careersAnchor">Careers</a>
+                        <span class="img-wrapper"><img src="/MEDIA/Icons/List-Gold.svg" alt="Gold Coin"></span>
+                    </div>
+                    <div class="contact-link">
+                        <a href="contact.html#locationsAnchor">Locations</a>
+                        <span class="img-wrapper"><img src="/MEDIA/Icons/List-Gold.svg" alt="Gold Coin"></span>
+                    </div>
+                </div>
+
+            </li>
+
+            <li class="nav-item" id="themeWrapper">
+
+                <a href="#" class="nav-link">CUSTOMIZE EXPERIENCE
+                    <span>
+                        <img src="/MEDIA/Icons/Aria-Gold.svg" alt="Aria Icon">
+                    </span>
+                </a>
+                <div class="themes">
+                    <h3>Themes & <br>Accessability Controls</h3>
+                    <button id="btpThemeBtn">BTP</button>
+                    <button id="lightThemeBtn">Light</button>
+                    <button id="darkThemeBtn">Dark</button>
+                    <div class="aria">
+                        <button id="animationBtn">Turn Off Animations</button>
+                        <button id="gifsBtn">Turn Off Gifs</button>
+                    </div>
+                </div>
+            </li> 
+        </ul>
+        <button id="expandNav" class="close-btn">
+            <div class="img-wrapper"><img src="/MEDIA/Icons/close.svg" alt="BTP Logo"></div>
+        </button>
+    </nav>
+
+    <div class="coffee-menu">
+        <div class="coffee-menu-header">
+            <div class="img-wrapper">
+                <img src="/MEDIA/Icons/BTP Logo One.png" alt="">
+            </div>
+            <h3>Menu</h3>
+        </div>
+
+        <div class="menu">
+            <div class="menu-title">
+                <h2>Coffee / Tea</h2>
+            </div>
+            <div class="menu-sizes">
+                <h4>Small - 16oz</h4>
+                <h4>Large - 20oz</h4>
+            </div>
+
+            <div class="menu-section">
+
+                <div class="menu-col">
+
+                    <div class="menu-item">
+                        <h4>Organic House Blend</h4>
+                        <div class="price">
+                            <span>2.00</span>
+                            <span>2.50</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Cafe au lait</h4>
+                        <div class="price">
+                            <span>2.25</span>
+                            <span>2.75</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Pour Over</h4>
+                        <div class="price">
+                            <span>4.00</span>
+                            <span>4.50</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Espresso Double</h4>
+                        <div class="price">
+                            <span>2.00</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Red Eye</h4>
+                        <div class="price">
+                            <span>4.00</span>
+                            <span>4.50</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Americano</h4>
+                        <div class="price">
+                            <span>3.50</span>
+                            <span>4.00</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Cappuccino</h4>
+                        <div class="price">
+                            <span>4.50</span>
+                            <span>5.00</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Latte</h4>
+                        <div class="price">
+                            <span>4.50</span>
+                            <span>5.00</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Mocha Latte</h4>
+                        <div class="price">
+                            <span>4.75</span>
+                            <span>5.25</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Cortado</h4>
+                        <div class="price">
+                            <span>3.50</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Hot Tea</h4>
+                        <div class="price">
+                            <span>2.50</span>
+                            <span>3.00</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>London Fog</h4>
+                        <div class="price">
+                            <span>3.50</span>
+                            <span>4.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Matcha Latte</h4>
+                        <div class="price">
+                            <span>4.50</span>
+                            <span>5.00</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Chai Latte</h4>
+                        <div class="price">
+                            <span>4.50</span>
+                            <span>5.00</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Tumeric Latte</h4>
+                        <div class="price">
+                            <span>4.50</span>
+                            <span>5.00</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Hot Chocolate</h4>
+                        <div class="price">
+                            <span>3.50</span>
+                            <span>4.00</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <div class="menu-title">
+                <h2>Over Ice</h2>
+            </div>
+            <div class="menu-sizes">
+                <h4>Small - 16oz</h4>
+                <h4>Large - 20oz</h4>
+            </div>
+
+            <div class="menu-section">
+
+                <div class="menu-col">
+
+                    <div class="menu-item">
+                        <h4>Cold Brew</h4>
+                        <div class="price">
+                            <span>4.50</span>
+                            <span>5.00</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Iced Americano</h4>
+                        <div class="price">
+                            <span>3.25</span>
+                            <span>4.00</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Iced Latte</h4>
+                        <div class="price">
+                            <span>4.00</span>
+                            <span>5.50</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Iced Mocha Latte</h4>
+                        <div class="price">
+                            <span>4.75</span>
+                            <span>6.00</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Iced Brewed Tea</h4>
+                        <div class="price">
+                            <span>2.00</span>
+                            <span>3.50</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Iced Chai</h4>
+                        <div class="price">
+                            <span>4.50</span>
+                            <span>5.00</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <div class="menu-title">
+                <h2>Smoothies</h2>
+            </div>
+            <div class="menu-sizes">
+                <h4>16oz - $6.75</h4>
+                <h4>24oz - $8.00</h4>
+            </div>
+
+            <div class="menu-section">
+
+                <div class="menu-col">
+
+                    <div class="menu-item">
+                        <h4>The Elvis</h4>
+                        <p>Banana, Peanut Butter, Honey, Granola</p>  
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Berry Blast</h4>
+                        <p>Strawberry, Blueberry, Blackberry, Granola</p>  
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Revival</h4>
+                        <p>Espresso, Chocolate, Protein Powder</p>  
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Sweet Green</h4>
+                        <p>Mango, Pineapple, Spinach</p>  
+                        <p>Chia Seeds, Orange Juice</p>  
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <div class="menu-title">
+                <h2>Pastries</h2>
+            </div>
+            <div class="menu-section">
+
+                <div class="menu-col">
+
+                    <div class="menu-item">
+                        <h4>Croissants</h4>
+                        <p>2 pieces served with sm coffee</p>
+                        <span>8.50</span>  
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Baguettes</h4>
+                        <p>1 piece served with sm coffee</p>
+                        <span>6.50</span>  
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Coffee Cake</h4>
+                        <p>1 pieces served with fruit selection</p>
+                        <span>9.75</span>  
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Cake Pops</h4>
+                        <p>2 pieces</p>
+                        <span>7.00</span>  
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="footer-nav">
+            <div class="socials">
+                <a href="facebook.com"><img src="/MEDIA/Icons/Social-FB.svg" alt=""></a>
+                <a href="instagram.com"><img src="/MEDIA/Icons/Social-Insta.svg" alt=""></a>
+                <a href="pintrest.com"><img src="/MEDIA/Icons/Social-Pintrest.svg" alt=""></a>
+                <a href="x.com"><img src="/MEDIA/Icons/Social-X.svg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="footer-meta">
+            <div class="meta">
+                <a href="PAGES/meta.html#termsAnchor">Terms & Conditions</a>
+            </div>
+            <div class="meta">
+                <a href="PAGES/meta.html#privacyAnchor">Privacy Policy</a>
+            </div>
+            <div class="meta">
+                <a href="PAGES/meta.html#contactAnchor">Contact Us</a>
+            </div>
+            <div class="meta">
+                <a href="PAGES/meta.html#locationsAnchor">Locations</a>
+            </div>
+        </div>
+        <div class="img-wrapper"><img src="/MEDIA/Icons/BTP Logo One.png" alt="BTP Logo"></div>
+    </footer>
+
+</body>
+</html>
